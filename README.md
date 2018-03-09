@@ -14,12 +14,16 @@
 
 [![Video Label](http://img.youtube.com/vi/n3-OE7fEXB8/0.jpg)](https://youtu.be/n3-OE7fEX?t=0s) 
 
+링크 : https://youtu.be/n3-OE7fEX
+
 ### 3. 팀 소개
 
-20123363 박상열 /
-20153174 박고은 /
-20123351 김형민 /
-20133200 김명수 /
+##### 20123363 박상열
+- github : https://github.com/phenol94
+- email : jimmy@grepp.co
+##### 20153174 박고은
+##### 20123351 김형민
+##### 20133200 김명수
 
 ### 4. 사용법
 
