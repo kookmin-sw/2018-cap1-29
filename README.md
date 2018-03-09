@@ -23,6 +23,8 @@
 - github : https://github.com/alfzltm101
 - email : alfzltm101@naver.com
 ##### 20123351 김형민
+- github : https://github.com/toms0124
+- email : toms0124@naver.com
 ##### 20133200 김명수
 
 - github : https://github.com/learnitdeep, https://github.com/zerobugplz
