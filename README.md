@@ -23,6 +23,9 @@
 ##### 20123351 김형민
 ##### 20133200 김명수
 
+- github : https://github.com/learnitdeep, https://github.com/zerobugplz
+- email : learnitdeep@gmail.com
+
 ### 4. 사용법
 
 소스코드제출시 설치법이나 사용법을 작성하겠습니다.
