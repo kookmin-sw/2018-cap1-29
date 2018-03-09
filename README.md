@@ -20,6 +20,8 @@
 - github : https://github.com/phenol94
 - email : jimmy@grepp.co
 ##### 20153174 박고은
+- github : https://github.com/alfzltm101
+- email : alfzltm101@naver.com
 ##### 20123351 김형민
 ##### 20133200 김명수
 
