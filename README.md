@@ -12,7 +12,7 @@
 
 ### 2. 소개 영상
 
-https://youtu.be/n3-OE7fEXB8
+[![Video Label](http://img.youtube.com/vi/n3-OE7fEXB8/0.jpg)](https://youtu.be/n3-OE7fEX?t=0s) 
 
 ### 3. 팀 소개
 
