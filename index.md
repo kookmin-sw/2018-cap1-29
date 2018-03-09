@@ -16,20 +16,30 @@
 
 ### 3. 팀 소개
 
-##### 20123363 박상열
+##### 박상열(팀장)
+- 학번 : 20123363
 - github : https://github.com/phenol94
 - email : jimmy@grepp.co
-##### 20153174 박고은
-##### 20123351 김형민
-##### 20133200 김명수
+##### 박고은
+- 학번 : 20153174
+- github : https://github.com/alfzltm101
+- email : alfzltm101@naver.com
+##### 김형민
+- 학번 : 20123351
+- github : https://github.com/toms0124
+- email : toms0124@naver.com
+##### 김명수
+- 학번 : 20133200
+- github : https://github.com/learnitdeep, https://github.com/zerobugplz
+- email : learnitdeep@gmail.com
 
 ### 4. 사용법
 
-소스코드제출시 설치법이나 사용법을 작성하겠습니다.
+추후 작성
 
 ### 5. 기타
 
-추가적인 내용은 자유롭게 작성하겠습니다
+추후 작성
 
 
 
