@@ -1,12 +1,9 @@
 
 // Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 
-
-
 pragma solidity ^0.4.18;
 
 import "./EIP20Interface.sol";
-
 
 contract qasToken is EIP20Interface {
 
@@ -32,7 +29,7 @@ contract qasToken is EIP20Interface {
     */) public {
         balances[msg.sender] = MAX_UINT256;               // Give the creator all initial tokens
         totalSupply = MAX_UINT256;                        // Update total supply
-        name = "Hash Coin";                                   // Set the name for display purposes
+        name = "HashCoin";                                   // Set the name for display purposes
         decimals = 10;                            // Amount of decimals for display purposes
         symbol = "HCX";
         master = msg.sender;                             // Set the symbol for display purposes
@@ -75,8 +72,7 @@ contract qasToken is EIP20Interface {
             balances[_to] += 1000;
             Transfer(master, _to, 1000);
             return true;
-        }
-        else{
+        } else {
             return false;
         }
 
