@@ -33,7 +33,7 @@ contract qasToken is EIP20Interface {
     uint8 public decimals;                //How many decimals to show.
     string public symbol;                 //An identifier: eg SBX
     address public master; /*= 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;*/
-
+    uint questionCounter;
     function qasToken(/*
         uint256 _initialAmount,
         string _tokenName,
