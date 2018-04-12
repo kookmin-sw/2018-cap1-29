@@ -44,4 +44,5 @@ contract EIP20Interface {
     // solhint-disable-next-line no-simple-event-func-name
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+    event LogRegistQuestion(uint indexed _id, address indexed _author, string _title);
 }
