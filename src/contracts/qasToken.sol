@@ -3,8 +3,24 @@ pragma solidity ^0.4.18;
 import "./EIP20Interface.sol";
 
 contract qasToken is EIP20Interface {
+    struct Question {
+        uint id;
+        address author;
+        string title;
+        string description;
+    }
 
+    struct Answer {
+        uint id;
+        uint question_id;
+        address author;
+        string title;
+        string description;
+        bool choose;
+    }
     uint256 constant private MAX_UINT256 = 2**256 - 1;
+    mapping (uint => Question) public questions;
+    mapping (uint => Answer) public answers;
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
     /*
@@ -53,13 +69,17 @@ contract qasToken is EIP20Interface {
     }
 
     // value = money for the question
-    function registQuestion(uint256 _value) public returns (bool success) {
+    function registQuestion(uint256 _value, string _title, string _description) public returns (bool success) {
+        transfer(master, _value);
+        questionCounter++;
+        questions[questionCounter] = Question(
+            questionCounter,
+            msg.sender,
+            _title,
+            _description
+        );
 
-        require(balances[msg.sender] >= _value);
-        balances[msg.sender] -= _value;
-        balances[master] += _value;
-        Transfer(msg.sender, master, _value);
-        return true;
+        LogRegistQuestion(questionCounter, msg.sender, _title);
     }
 
     function signIn(address _to) public returns (bool success) {
