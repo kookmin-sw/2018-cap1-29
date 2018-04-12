@@ -59,6 +59,7 @@ contract qasToken is EIP20Interface {
 
     // value = money for the question
     function registQuestion(uint256 _value) public returns (bool success) {
+
         require(balances[msg.sender] >= _value);
         balances[msg.sender] -= _value;
         balances[master] += _value;
@@ -66,12 +67,31 @@ contract qasToken is EIP20Interface {
         return true;
     }
 
+    function signIn(address _to) public returns (bool success) {
+        if(msg.sender == master){
+            require(balances[master] >= 1000);
+            balances[master] -= 1000;
+            balances[_to] += 1000;
+            Transfer(master, _to, 1000);
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+
     function chooseAnswer(address _to, uint256 _value) public returns (bool success) {
-        require(balances[master] >= _value);
-        balances[master] -= _value;
-        balances[_to] += _value;
-        Transfer(master, _to, _value);
-        return true;
+        if(msg.sender == master){
+            require(balances[master] >= _value);
+            balances[master] -= _value;
+            balances[_to] += _value;
+            Transfer(master, _to, _value);
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     function balanceOf(address _owner) public view returns (uint256 balance) {
