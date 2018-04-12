@@ -77,6 +77,16 @@ contract qasToken is EIP20Interface {
         }
 
     }
+        function upVote(address _to) public returns (bool success) {
+        if(msg.sender == master){
+            transfer(_to, 100);
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
 
     function chooseAnswer(address _to, uint256 _value) public returns (bool success) {
         if(msg.sender == master){
