@@ -22,19 +22,20 @@ contract qasToken is EIP20Interface {
     string public name;                   //fancy name: eg Simon Bucks
     uint8 public decimals;                //How many decimals to show.
     string public symbol;                 //An identifier: eg SBX
-    address public master = 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;
+    address public master; /*= 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;*/
 
-    function qasToken(
+    function qasToken(/*
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
         string _tokenSymbol
-    ) public {
-        balances[msg.sender] = _initialAmount;               // Give the creator all initial tokens
-        totalSupply = _initialAmount;                        // Update total supply
-        name = _tokenName;                                   // Set the name for display purposes
-        decimals = _decimalUnits;                            // Amount of decimals for display purposes
-        symbol = _tokenSymbol;                               // Set the symbol for display purposes
+    */) public {
+        balances[msg.sender] = MAX_UINT256;               // Give the creator all initial tokens
+        totalSupply = MAX_UINT256;                        // Update total supply
+        name = "Hash Coin";                                   // Set the name for display purposes
+        decimals = 10;                            // Amount of decimals for display purposes
+        symbol = "HCX";
+        master = msg.sender;                             // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {

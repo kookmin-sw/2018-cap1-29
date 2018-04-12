@@ -1,5 +1,5 @@
-var Qas = artifacts.require("./Qas.sol");
+var qasToken = artifacts.require("./qasToken.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Qas);
+  deployer.deploy(qasToken);
 }
