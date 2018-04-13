@@ -1,45 +1,46 @@
+## I. 프로젝트 개요
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/2018-cap1-29
+   본 프로젝트는 이더리움 기반의 가상화폐와 DApp을 개발해 그렙에서 운영 중인 **[해시코드](http://hashcode.co.kr/)에 적용**하기 위함이다. 해시코드는 개발자들을 위한 질문 답변 사이트로 해외의 [스택오버플로우](https://stackoverflow.com/)와 유사한 형태의 서비스다.
 
-### 1. 프로잭트 소개
+   해시코드에 답변을 등록해 지식을 공유한 답변자에게 현물 가치를 가진 블록체인 기반의 가상화폐를 보상으로 지급해 이용자의 활동을 독려하고 커뮤니티 생태계에 활력을 불어넣으려고 한다.
 
-  블록체인  활용한 이더리움 기반의 알트코인을 개발해 기업 혹은 단체간의 마일리지 혹은 포인트로 대표되는 리워드 시스템의 상호교환을 가능하게 하기 위함이다.   
+   답변에 참여하는 사용자를 증가시키면 자연스럽게 질문을 올리는 사용자도 증가하리라 예상하며, 이를 통해 해시코인 서비스를 성장시키고자 한다.
 
-  이더리움 기반의 알트코인과 이를 교환하거나 송금할 수 있는 스마트 컨트랙트를 개발하고 이를 2가지의 예시 서비스에 적용하고자 한다.  
-
-- 해시코드 - 그렙에서 현재 운영 중인 개발자들을 위한 질문 답변 사이트로 해외의 스택오버플로우와 유사한 형태의 서비스이다. 지식을 공유한 답변자에게 보상을 알트코인으로 지급해 이용자의 활동을 독려하고자 한다.
-- 재능마켓 서비스 - 재능을 사고나 팔 수 있는 서비스이다. 이는 직접 프로토타입을 개발해 이더리움 기반의 알트코인으로 재능을 사거나 팔 수 있도록 구현해보고자 한다.  
-
-### 2. 소개 영상
-
-[![Video Label](http://img.youtube.com/vi/n3-OE7fEXB8/0.jpg)](https://youtu.be/n3-OE7fEXB8?t=0s) 
-
-### 3. 팀 소개
+## II. 팀 소개
 
 ##### 박상열(팀장)
+
 - 학번 : 20123363
 - github : https://github.com/phenol94
 - email : jimmy@grepp.co
+
 ##### 박고은
+
 - 학번 : 20153174
 - github : https://github.com/alfzltm101
 - email : alfzltm101@naver.com
+
 ##### 김형민
+
 - 학번 : 20123351
 - github : https://github.com/toms0124
 - email : toms0124@naver.com
+
 ##### 김명수
+
 - 학번 : 20133200
 - github : https://github.com/learnitdeep, https://github.com/zerobugplz
 - email : learnitdeep@gmail.com
 
-### 4. 사용법
+## III. Abstract (영문 요약)
 
-추후 작성
+  This project is intended to add a Cryptocurrency Rewards System to [Hashcode](http://hashcode.co.kr/) that is running on Grepp, Inc. The purpose is to encourage user activities and to reinvigorate the community for Hashcode by paying off cryptocurrency based on blockchain.
 
-### 5. 기타
+  We will expect that increasing the number of users participating in answer also increase the number of users participating in question. through this,  we want to grow our services.
 
-추후 작성
+## IV. 소개 영상
 
+[![Video Label](http://img.youtube.com/vi/n3-OE7fEXB8/0.jpg)](https://youtu.be/n3-OE7fEXB8?t=0s) 
 
+## V.  결과 영상
 
