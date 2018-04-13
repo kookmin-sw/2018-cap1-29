@@ -35,6 +35,10 @@ contract qasToken is EIP20Interface {
     address public master; /*= 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;*/
     uint questionCounter;
     uint answerCounter;
+    uint public initial_amount =1000;
+    uint public upvote_amount = 100;
+
+
     function qasToken(/*
         uint256 _initialAmount,
         string _tokenName,
@@ -46,7 +50,8 @@ contract qasToken is EIP20Interface {
         name = "HashCoin";                                   // Set the name for display purposes
         decimals = 10;                            // Amount of decimals for display purposes
         symbol = "HCX";
-        master = msg.sender;                             // Set the symbol for display purposes
+        master = msg.sender;    
+                             // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
@@ -101,11 +106,8 @@ contract qasToken is EIP20Interface {
 
     function signIn(address _to) public returns (bool success) {
         if(msg.sender == master){
-            require(balances[master] >= 1000);
-            balances[master] -= 1000;
-            balances[_to] += 1000;
-            Transfer(master, _to, 1000);
-            return true;
+            transfer(_to, initial_amount);
+                return true;
         } else {
             return false;
         }
@@ -113,7 +115,7 @@ contract qasToken is EIP20Interface {
     }
         function upVote(address _to) public returns (bool success) {
         if(msg.sender == master){
-            transfer(_to, 100);
+            transfer(_to, upvote_amount);
             return true;
         } else {
             return false;
@@ -121,13 +123,9 @@ contract qasToken is EIP20Interface {
 
     }
 
-
     function chooseAnswer(address _to, uint256 _value) public returns (bool success) {
         if(msg.sender == master){
-            require(balances[master] >= _value);
-            balances[master] -= _value;
-            balances[_to] += _value;
-            Transfer(master, _to, _value);
+            transfer(_to, _value);
             return true;
         }
         else{
