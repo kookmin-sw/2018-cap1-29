@@ -45,4 +45,5 @@ contract EIP20Interface {
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
     event LogRegistQuestion(uint indexed _id, address indexed _author, string _title);
+    event LogRegistAnswer(uint indexed _id, uint indexed _question_id, address indexed _author, string _title, bool _choose);
 }
