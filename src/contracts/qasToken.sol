@@ -34,6 +34,7 @@ contract qasToken is EIP20Interface {
     string public symbol;                 //An identifier: eg SBX
     address public master; /*= 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;*/
     uint questionCounter;
+    uint answerCounter;
     function qasToken(/*
         uint256 _initialAmount,
         string _tokenName,
@@ -81,6 +82,23 @@ contract qasToken is EIP20Interface {
 
         LogRegistQuestion(questionCounter, msg.sender, _title);
     }
+
+    function registAnswer(_question_id, string _title, string _description) public returns (bool success) {
+        transfer(_to, _value);
+        require(_question_id > 0 && _question_id <= questionCounter);
+        answerCounter++;
+        answers[answerCounter] = Answer(
+            answerCounter,
+            _question_id,
+            msg.sender,
+            _title,
+            _description,
+            false
+        );
+
+        LogRegistAnswer(answerCounter, _question_id, msg.sender, _title, false);
+    }
+
 
     function signIn(address _to) public returns (bool success) {
         if(msg.sender == master){
