@@ -5,6 +5,8 @@ contract('qasToken', function(accounts) {
   var instance;
   var questionTitle = "Question 1";
   var questionDescription = "Description for Question 1";  
+  var answerTitle = "Answer 1 for Question 1";
+  var answerDescription = "Description for Answer 1 for Question 1"; 
   var master = accounts[0];
   var questioner = accounts[1];
   var questionee = accounts[2];
@@ -37,6 +39,20 @@ contract('qasToken', function(accounts) {
       assert.equal(receipt.logs[0].args._to, master, "from account must be " + master);
       assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
       assert.equal(receipt.logs[1].args._title, questionTitle, "event question title must be " + questionTitle);
+    });
+  });
+  it("should regist answer", function() {
+    return qasToken.deployed().then(function(instance) {
+      return instance.registAnswer(1, answerTitle, answerDescription, 
+      {
+        from: questionee
+      });
+    }).then(function(receipt) {
+      assert.equal(receipt.logs.length, 1, "one event should have been triggered");
+      assert.equal(receipt.logs[0].event, "LogRegistAnswer", "event should be LogRegistAnswer");
+      assert.equal(receipt.logs[0].args._id.toNumber(), 1, "id must be 1");
+      assert.equal(receipt.logs[0].args._author, questionee, "event author must be " + questionee);     
+      assert.equal(receipt.logs[0].args._title, answerTitle, "event question title must be " + answerTitle);
     });
   });
 

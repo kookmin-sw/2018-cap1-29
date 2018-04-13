@@ -83,8 +83,7 @@ contract qasToken is EIP20Interface {
         LogRegistQuestion(questionCounter, msg.sender, _title);
     }
 
-    function registAnswer(_question_id, string _title, string _description) public returns (bool success) {
-        transfer(_to, _value);
+    function registAnswer(uint256 _question_id, string _title, string _description) public returns (bool success) {
         require(_question_id > 0 && _question_id <= questionCounter);
         answerCounter++;
         answers[answerCounter] = Answer(
