@@ -7,9 +7,12 @@ contract('qasToken', function(accounts) {
   var questionDescription = "Description for Question 1";  
   var answerTitle = "Answer 1 for Question 1";
   var answerDescription = "Description for Answer 1 for Question 1"; 
+  var chosenAnswerID  =  1;
   var master = accounts[0];
   var questioner = accounts[1];
   var questionee = accounts[2];
+  var questionerBefore, questionerAfter;
+  var questioneeBefore, questioneeAfter;
 
   it("should sign in", function() {
     return qasToken.deployed().then(function(instance) {
@@ -58,16 +61,21 @@ contract('qasToken', function(accounts) {
 
   it("should choose answer", function() {
     return qasToken.deployed().then(function(instance) {
-      return instance.chooseAnswer(questionee, bounty, {
-        from: master
+      questionerBefore=web3.fromWei(web3.eth.getBalance(questioner), "ether").toNumber();
+      questioneeBefore=web3.fromWei(web3.eth.getBalance(questionee), "ether").toNumber();
+      return instance.chooseAnswer(questionee, 1, bounty, {
+        from: questioner
       });
     }).then(function(receipt) {
-      assert.equal(receipt.logs.length, 1, "one event should have been triggered");
+      assert.equal(receipt.logs.length, 1, "two events should have been triggered");
       assert.equal(receipt.logs[0].event, "Transfer", "event should be Transfer");
-      assert.equal(receipt.logs[0].args._from, master, "to account must be " + master);
+  //    assert.equal(receipt.logs[1].event, "LogChooseAnswer", "event should be LogChooseAnswer");
+      assert.equal(receipt.logs[0].args._from, questioner, "to account must be " + questioner);
       assert.equal(receipt.logs[0].args._to, questionee, "from account must be " + questionee);
       assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
-    });
+  //    assert.equal(receipt.logs[1].args._answer_id.toNumber(), chosenAnswerID, "value must be " + chosenAnswerID);
+      questionerAfter = web3.fromWei(web3.eth.getBalance(questioner), "ether").toNumber();
+     });
   });
 
   it("should upvote", function() {

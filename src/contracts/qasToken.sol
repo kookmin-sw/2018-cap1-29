@@ -38,6 +38,10 @@ contract qasToken is EIP20Interface {
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
 
+        event LogChooseAnswer(
+        uint indexed _question_id,
+        uint indexed _answer_id,
+        address indexed _answer_author    );
 
     function qasToken(/*
         uint256 _initialAmount,
@@ -123,20 +127,21 @@ contract qasToken is EIP20Interface {
 
     }
 
-    function chooseAnswer(address _to, uint256 _value) public returns (bool success) {
+    function chooseAnswer(address _to, uint256 _answer_id, uint256 _value) public returns (bool success) {
         require(questionCounter > 0);
         require(answerCounter > 0);
         require(_answer_id > 0 && _answer_id <= answerCounter);
         Answer storage answer = answers[_answer_id];
         Question storage question = questions[answer.question_id];
-        if(msg.sender == master){
-            transfer(_to, _value);
+ //       name = question.author;
+        if(msg.sender == question.author){
+        Transfer(msg.sender, _to, _value);
             return true;
         }
         else{
             return false;
         }
-        LogChooseAnswer(question.id, answer.id, answer.author, msg.value);
+        LogChooseAnswer(question.id, answer.id, answer.author);
     }
 
     function balanceOf(address _owner) public view returns (uint256 balance) {
