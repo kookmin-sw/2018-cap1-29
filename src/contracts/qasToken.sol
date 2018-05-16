@@ -113,7 +113,7 @@ contract qasToken is EIP20Interface {
         }
 
     }
-        function upVote(address _to) public returns (bool success) {
+    function upVote(address _to) public returns (bool success) {
         if(msg.sender == master){
             transfer(_to, upvote_amount);
             return true;
@@ -124,6 +124,11 @@ contract qasToken is EIP20Interface {
     }
 
     function chooseAnswer(address _to, uint256 _value) public returns (bool success) {
+        require(questionCounter > 0);
+        require(answerCounter > 0);
+        require(_answer_id > 0 && _answer_id <= answerCounter);
+        Answer storage answer = answers[_answer_id];
+        Question storage question = questions[answer.question_id];
         if(msg.sender == master){
             transfer(_to, _value);
             return true;
@@ -131,6 +136,7 @@ contract qasToken is EIP20Interface {
         else{
             return false;
         }
+        LogChooseAnswer(question.id, answer.id, answer.author, msg.value);
     }
 
     function balanceOf(address _owner) public view returns (uint256 balance) {
