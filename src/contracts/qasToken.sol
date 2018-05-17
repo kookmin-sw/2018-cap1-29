@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-
+ 
 import "./EIP20Interface.sol";
 
 contract qasToken is EIP20Interface {
@@ -143,7 +143,16 @@ contract qasToken is EIP20Interface {
         }
         LogChooseAnswer(question.id, answer.id, answer.author);
     }
+    function rewardAnswer(uint _answer_id) payable public {
+        require(questionCounter > 0);
+        require(answerCounter > 0);
+        require(_answer_id < 0 && _answer_id <= answerCounter);
 
+        Answer storage answer = answers[_answer_id];
+
+        answer.author.transfer(msg.value);
+        LogRewardAnswer(answer.id, answer.author, answer.choose, msg.value);
+    }
     function balanceOf(address _owner) public view returns (uint256 balance) {
         return balances[_owner];
     }
