@@ -6,11 +6,12 @@ namespace eosio {
 
     class hashcode : public contract {
         using contract::contract;
+        account_name owner;
 
         public:
             hashcode(account_name self):contract(self) {}
 
-            void add(const account_name account, string& username) {
+            void addhasher(const account_name account, string& username) {
                 /**
                  * We require that only the owner of an account can use this action
                  * or somebody with the account authorization
@@ -58,7 +59,34 @@ namespace eosio {
                 print("Username: ", currentHasher.username.c_str(), " Level: ", currentHasher.level, " Points: ", currentHasher.points, " Experience: ", currentHasher.experience);
             }
 
+            void writecontent(string& username, string& content_name, uint64_t content_number, uint64_t content_point){
+                require_auth(account);
+
+                contentIndex contents(_self, _self);
+
+                if(content_number < current_no){print("The content number is lower than current_no. Please check again.");}
+
+                contents.emplace(content_number, [&](auto& content){
+                  content.username = username;
+                  content.content_name = content_name;
+                  content.number = content_number;
+                  content.points = content_point;
+                });
+
+            }
+
+            void getcontent(const uint64_t content_number){
+                contentIndex contents(_self, _self);
+
+                auto iterator = contents.find(content_number);
+                eosio_assert(iterator != contents.end(), "Content number not found");
+
+                auto currentContent = contents.get(content_number);
+                print("Username: ", currentContent.username.c_str(), " Content name: ", currentContent.content_name, " Content number: ", currentContent.number, " Content points: ", currentContent.points);
+            }
+
         private:
+            uint64_t current_no = 0;
 
             //@abi table hasher i64
             struct hasher {
@@ -76,19 +104,23 @@ namespace eosio {
             typedef multi_index<N(hasher), hasher> hasherIndex;
 
             struct content {
-                uint64_t account_name;
-                uint64_t username;
+                string username;
+                string content_name;
                 uint64_t number;
-                uint64_t points;
+                uint64_t points = 0;
+                uint64_t writer_select_account = 0;
+                uint64_t hasher_select_account = 0;
 
-                uint64_t primary_key() const { return account_name; }
+                uint64_t primary_key() const { return number; }
 
-                EOSLIB_SERIALIZE(content, (account_name)(username)(number)(points))
+                EOSLIB_SERIALIZE(content, (username)(content_name)(number)(points)(writer_select_account)(hasher_select_account))
             };
+
+            typedef multi_index<N(content),content> contentIndex;
+
 
 
     };
-    EOSIO_ABI(hashcode, (add)(gethasher))
+    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent))
 }
-
 
