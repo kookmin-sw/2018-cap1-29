@@ -63,7 +63,15 @@ namespace eosio {
                 require_auth(account);
 
                 contentIndex contents(_self, _self);
+                hasherIndex hashers(_self, _self);
 
+                auto iterator = hashers.find(account);
+                eosio_assert(iterator != hashers.end(), "Address for account not found");
+
+                auto currentHasher = hashers.get(account);
+                auto user_point = currentHasher.points;
+
+                if(user_point<content_point){print("Not enough points. Please check again.")}
                 if(content_number < current_no){print("The content number is lower than current_no. Please check again.");}
 
                 contents.emplace(content_number, [&](auto& content){
