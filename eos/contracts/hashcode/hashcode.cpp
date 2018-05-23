@@ -59,7 +59,7 @@ namespace eosio {
                 print("Username: ", currentHasher.username.c_str(), " Level: ", currentHasher.level, " Points: ", currentHasher.points, " Experience: ", currentHasher.experience);
             }
 
-            void writecontent(string& username, string& content_name, uint64_t content_number, uint64_t content_point){
+            void writecontent(const account_name account, string& username, string& content_name, uint64_t content_number, uint64_t content_point){
                 require_auth(account);
 
                 contentIndex contents(_self, _self);
@@ -67,6 +67,7 @@ namespace eosio {
                 if(content_number < current_no){print("The content number is lower than current_no. Please check again.");}
 
                 contents.emplace(content_number, [&](auto& content){
+                  content.account_name = account;
                   content.username = username;
                   content.content_name = content_name;
                   content.number = content_number;
@@ -82,7 +83,7 @@ namespace eosio {
                 eosio_assert(iterator != contents.end(), "Content number not found");
 
                 auto currentContent = contents.get(content_number);
-                print("Username: ", currentContent.username.c_str(), " Content name: ", currentContent.content_name, " Content number: ", currentContent.number, " Content points: ", currentContent.points);
+                print("Username: ", currentContent.username.c_str(), " Content-name: ", currentContent.content_name.c_str(), " Content-number: ", currentContent.number, " Content-points: ", currentContent.points);
             }
 
         private:
@@ -104,6 +105,7 @@ namespace eosio {
             typedef multi_index<N(hasher), hasher> hasherIndex;
 
             struct content {
+                uint64_t account_name;
                 string username;
                 string content_name;
                 uint64_t number;
@@ -113,7 +115,7 @@ namespace eosio {
 
                 uint64_t primary_key() const { return number; }
 
-                EOSLIB_SERIALIZE(content, (username)(content_name)(number)(points)(writer_select_account)(hasher_select_account))
+                EOSLIB_SERIALIZE(content, (account_name)(username)(content_name)(number)(points)(writer_select_account)(hasher_select_account))
             };
 
             typedef multi_index<N(content),content> contentIndex;
@@ -121,6 +123,6 @@ namespace eosio {
 
 
     };
-    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent))
+    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent)(getcontent))
 }
 
