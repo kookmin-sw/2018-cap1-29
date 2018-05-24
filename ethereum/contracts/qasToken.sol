@@ -172,6 +172,13 @@ contract qasToken is EIP20Interface {
             level = answer.choosedAnswerCounter /10;
         }
     }
+    function donateToken(address _from, address _to, uint256 value){
+        uint256 allowance = allowed[_from][msg.sender];
+        require(balances[_from] >= _value && allowance >= _value)
+        balances[_from] -= _value;
+        balances[_to] += _value;
+        Transfer(msg.sender, _to, _value);
+    }
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
         return allowed[_owner][_spender];
     }
