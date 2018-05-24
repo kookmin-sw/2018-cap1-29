@@ -15,6 +15,8 @@ contract qasToken is EIP20Interface {
         uint question_id;
         address author;
         string title;
+        uint choosedAnswerCounter;
+        uint level;
         string description;
         bool choose;
     }
@@ -35,9 +37,11 @@ contract qasToken is EIP20Interface {
     address public master; /*= 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;*/
     uint questionCounter;
     uint answerCounter;
+
+   
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
-
+    uint public initial_level = 1;
         event LogChooseAnswer(
         uint indexed _question_id,
         uint indexed _answer_id,
@@ -142,6 +146,7 @@ contract qasToken is EIP20Interface {
             return false;
         }
         LogChooseAnswer(question.id, answer.id, answer.author);
+        answer.choosedAnswerCounter++;
     }
     function rewardAnswer(uint _answer_id) payable public {
         require(questionCounter > 0);
@@ -162,7 +167,11 @@ contract qasToken is EIP20Interface {
         Approval(msg.sender, _spender, _value);
         return true;
     }
-
+    function levelUp(uint256 _answer_id) public returns (bool success){
+        if(answer.choosedAnswerCounter/10>0 && answer.choosedAnswerCounter<100){
+            level = answer.choosedAnswerCounter /10;
+        }
+    }
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
         return allowed[_owner][_spender];
     }
