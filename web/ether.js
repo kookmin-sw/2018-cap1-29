@@ -1,4 +1,3 @@
-<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
 
 var Web3 = require('web3');
 var util = require('ethereumjs-util');
@@ -46,7 +45,7 @@ var txOptions = {
 }
 
 // Web3 examples
-var rawTx = txutils.functionTx(interface, 'transfer', ['0x38dDF905498F4D17585DBEFA71f602395Adb13C1',10], txOptions);
+var rawTx = txutils.functionTx(interface, 'transfer', ['0x38dDF905498F4D17585DBEFA71f602395Adb13C1',1000000000000000000], txOptions);
 sendRaw(rawTx);
 // var result = myContractInstance.getTokenCount();
 // console.log(result)

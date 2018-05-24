@@ -1,6 +1,6 @@
 .DS_Store
 *.swp
-
+node_modules
 # truffle build result
 ethereum/build
 ethereum/node_modules
