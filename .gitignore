@@ -2,5 +2,6 @@
 *.swp
 
 # truffle build result
-src/build
+ethereum/build
+ethereum/node_modules
 
