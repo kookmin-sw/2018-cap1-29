@@ -109,4 +109,17 @@ contract('qasToken', function(accounts) {
       assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
     });
   });
+  it("should donate token", function() {
+    return qasToken.deployed().then(function(instance) {
+      return instance.donateToken(sender, receiver, bounty, {
+        from: sender
+      });
+    }).then(function(receipt) {
+      assert.equal(receipt.logs.length, 1, "one event should have been triggered");
+      assert.equal(receipt.logs[0].event, "Transfer", "event should be Transfer");
+      assert.equal(receipt.logs[0].args._from, sender, "to account must be " + sender);
+      assert.equal(receipt.logs[0].args._to, receiver, "from account must be " + receiver);
+      assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
+    });
+  });
 });
