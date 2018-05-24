@@ -8,6 +8,7 @@ contract qasToken is EIP20Interface {
         address author;
         string title;
         string description;
+        uint bounty;
     }
 
     struct Answer {
@@ -20,6 +21,7 @@ contract qasToken is EIP20Interface {
         string description;
         bool choose;
     }
+
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (uint => Question) public questions;
     mapping (uint => Answer) public answers;
@@ -31,6 +33,7 @@ contract qasToken is EIP20Interface {
     All users have metamask(or we provide wallet frontend).
     register question, choose answer.
     */
+
     string public name;                   //fancy name: eg Simon Bucks
     uint8 public decimals;                //How many decimals to show.
     string public symbol;                 //An identifier: eg SBX
@@ -38,7 +41,7 @@ contract qasToken is EIP20Interface {
     uint questionCounter;
     uint answerCounter;
 
-   
+    
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
     uint public initial_level = 1;
@@ -90,13 +93,14 @@ contract qasToken is EIP20Interface {
             questionCounter,
             msg.sender,
             _title,
-            _description
+            _description,
+            _value
         );
 
         LogRegistQuestion(questionCounter, msg.sender, _title);
     }
 
-    function registAnswer(uint256 _question_id, string _title, string _description) public returns (bool success) {
+    function registAnswer(uint256 _question_id, string _title, string _description, uint256 _choosedAnswerCounter, uint256 _level) public returns (bool success) {
         require(_question_id > 0 && _question_id <= questionCounter);
         answerCounter++;
         answers[answerCounter] = Answer(
@@ -104,13 +108,14 @@ contract qasToken is EIP20Interface {
             _question_id,
             msg.sender,
             _title,
+            _choosedAnswerCounter,
+            _level,
             _description,
             false
         );
 
         LogRegistAnswer(answerCounter, _question_id, msg.sender, _title, false);
     }
-
 
     function signIn(address _to) public returns (bool success) {
         if(msg.sender == master){
@@ -151,12 +156,12 @@ contract qasToken is EIP20Interface {
     function rewardAnswer(uint _answer_id) payable public {
         require(questionCounter > 0);
         require(answerCounter > 0);
-        require(_answer_id < 0 && _answer_id <= answerCounter);
+        //require(_answer_id < 0 && _answer_id <= answerCounter);
 
         Answer storage answer = answers[_answer_id];
-
-        answer.author.transfer(msg.value);
-        LogRewardAnswer(answer.id, answer.author, answer.choose, msg.value);
+        Question storage question = questions[answer.question_id];
+        Transfer(question.author, answer.author, question.bounty);
+        LogRewardAnswer(answer.id, answer.author, answer.choose, question.bounty);
     }
     function balanceOf(address _owner) public view returns (uint256 balance) {
         return balances[_owner];
@@ -168,16 +173,10 @@ contract qasToken is EIP20Interface {
         return true;
     }
     function levelUp(uint256 _answer_id) public returns (bool success){
+        Answer storage answer = answers[_answer_id];
         if(answer.choosedAnswerCounter/10>0 && answer.choosedAnswerCounter<100){
-            level = answer.choosedAnswerCounter /10;
+            answer.level = answer.choosedAnswerCounter /10;
         }
-    }
-    function donateToken(address _from, address _to, uint256 value){
-        uint256 allowance = allowed[_from][msg.sender];
-        require(balances[_from] >= _value && allowance >= _value)
-        balances[_from] -= _value;
-        balances[_to] += _value;
-        Transfer(msg.sender, _to, _value);
     }
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
         return allowed[_owner][_spender];

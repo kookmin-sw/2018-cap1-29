@@ -11,6 +11,10 @@ contract('qasToken', function(accounts) {
   var master = accounts[0];
   var questioner = accounts[1];
   var questionee = accounts[2];
+  var sender = accounts[3];
+  var receiver= accounts[4];
+  var choosedAnswerCount=1;
+  var level=1;
   var questionerBefore, questionerAfter;
   var questioneeBefore, questioneeAfter;
 
@@ -46,7 +50,7 @@ contract('qasToken', function(accounts) {
   });
   it("should regist answer", function() {
     return qasToken.deployed().then(function(instance) {
-      return instance.registAnswer(1, answerTitle, answerDescription, 
+      return instance.registAnswer(1, answerTitle, answerDescription, choosedAnswerCount, level,
       {
         from: questionee
       });
@@ -93,13 +97,14 @@ contract('qasToken', function(accounts) {
   });
   it("should reward answer", function() {
     return qasToken.deployed().then(function(instance) {
-      return instance.upVote(questionee, {
-        from: master
+      return instance.rewardAnswer(1, {
+        from: questioner
       });
     }).then(function(receipt) {
-      assert.equal(receipt.logs.length, 1, "one event should have been triggered");
+      assert.equal(receipt.logs.length, 2, "one event should have been triggered");
       assert.equal(receipt.logs[0].event, "Transfer", "event should be Transfer");
-      assert.equal(receipt.logs[0].args._from, master, "to account must be " + master);
+      assert.equal(receipt.logs[1].event, "LogRewardAnswer", "event should be LogRewardAnswer");
+      assert.equal(receipt.logs[0].args._from, questioner, "to account must be " + questioner);
       assert.equal(receipt.logs[0].args._to, questionee, "from account must be " + questionee);
       assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
     });
