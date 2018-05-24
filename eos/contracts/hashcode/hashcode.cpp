@@ -71,7 +71,7 @@ namespace eosio {
                 auto currentHasher = hashers.get(account);
                 auto user_point = currentHasher.points;
 
-                if(user_point<content_point){print("Not enough points. Please check again.")}
+                if(user_point<content_point){print("Not enough points. Please check again.");}
                 if(content_number < current_no){print("The content number is lower than current_no. Please check again.");}
 
                 contents.emplace(content_number, [&](auto& content){
@@ -92,6 +92,27 @@ namespace eosio {
 
                 auto currentContent = contents.get(content_number);
                 print("Username: ", currentContent.username.c_str(), " Content-name: ", currentContent.content_name.c_str(), " Content-number: ", currentContent.number, " Content-points: ", currentContent.points);
+            }
+
+            void donate(const account_name from_account, const account_name to_account, uint64_t points){
+                require_auth(from_account);
+                hasherIndex hashers(_self, _self);
+                auto iterator = hashers.find(from_account);
+                eosio_assert(iterator != hashers.end(), "Your Address for account not found");
+
+                iterator = hashers.find(to_account);
+                eosio_assert(iterator != hashers.end(), "Receiver's Address for account not found");
+
+                auto currentHasher = hashers.get(from_account);
+                auto from_point = currentHasher.points;
+                if(from_point<points){print("Not enough points. Please check again.");}
+                else{
+                    from_point = from_point - points;
+                    auto currentHasher = hashers.get(to_account);
+                    auto to_point = currentHasher.points;
+                    to_point = to_point + points;
+                }
+
             }
 
         private:
@@ -131,6 +152,5 @@ namespace eosio {
 
 
     };
-    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent)(getcontent))
+    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent)(getcontent)(donate))
 }
-
