@@ -8,6 +8,7 @@ contract qasToken is EIP20Interface {
         address author;
         string title;
         string description;
+        uint bounty;
     }
 
     struct Answer {
@@ -15,9 +16,12 @@ contract qasToken is EIP20Interface {
         uint question_id;
         address author;
         string title;
+        uint choosedAnswerCounter;
+        uint level;
         string description;
         bool choose;
     }
+
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (uint => Question) public questions;
     mapping (uint => Answer) public answers;
@@ -29,15 +33,18 @@ contract qasToken is EIP20Interface {
     All users have metamask(or we provide wallet frontend).
     register question, choose answer.
     */
+
     string public name;                   //fancy name: eg Simon Bucks
     uint8 public decimals;                //How many decimals to show.
     string public symbol;                 //An identifier: eg SBX
     address public master; /*= 0x9CE08ACc22ad4ee411b0cfE0caE3421ACa5C32ca;*/
     uint questionCounter;
     uint answerCounter;
+
+    
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
-
+  //  uint public initial_level = 1;
         event LogChooseAnswer(
         uint indexed _question_id,
         uint indexed _answer_id,
@@ -86,13 +93,14 @@ contract qasToken is EIP20Interface {
             questionCounter,
             msg.sender,
             _title,
-            _description
+            _description,
+            _value
         );
 
         LogRegistQuestion(questionCounter, msg.sender, _title);
     }
 
-    function registAnswer(uint256 _question_id, string _title, string _description) public returns (bool success) {
+    function registAnswer(uint256 _question_id, string _title, string _description, uint256 _choosedAnswerCounter, uint256 _level) public returns (bool success) {
         require(_question_id > 0 && _question_id <= questionCounter);
         answerCounter++;
         answers[answerCounter] = Answer(
@@ -100,13 +108,14 @@ contract qasToken is EIP20Interface {
             _question_id,
             msg.sender,
             _title,
+            _choosedAnswerCounter,
+            _level,
             _description,
             false
         );
 
         LogRegistAnswer(answerCounter, _question_id, msg.sender, _title, false);
     }
-
 
     function signIn(address _to) public returns (bool success) {
         if(msg.sender == master){
@@ -133,7 +142,6 @@ contract qasToken is EIP20Interface {
         require(_answer_id > 0 && _answer_id <= answerCounter);
         Answer storage answer = answers[_answer_id];
         Question storage question = questions[answer.question_id];
- //       name = question.author;
         if(msg.sender == question.author){
         Transfer(msg.sender, _to, _value);
             return true;
@@ -142,16 +150,16 @@ contract qasToken is EIP20Interface {
             return false;
         }
         LogChooseAnswer(question.id, answer.id, answer.author);
+        answer.choosedAnswerCounter++;
     }
     function rewardAnswer(uint _answer_id) payable public {
         require(questionCounter > 0);
         require(answerCounter > 0);
-        require(_answer_id < 0 && _answer_id <= answerCounter);
 
         Answer storage answer = answers[_answer_id];
-
-        answer.author.transfer(msg.value);
-        LogRewardAnswer(answer.id, answer.author, answer.choose, msg.value);
+        Question storage question = questions[answer.question_id];
+        Transfer(question.author, answer.author, question.bounty);
+        LogRewardAnswer(answer.id, answer.author, answer.choose, question.bounty);
     }
     function balanceOf(address _owner) public view returns (uint256 balance) {
         return balances[_owner];
@@ -162,7 +170,18 @@ contract qasToken is EIP20Interface {
         Approval(msg.sender, _spender, _value);
         return true;
     }
-
+    function donateToken(address _from, address _to, uint256 _value) public returns (bool success) {
+        balances[_to] += _value;
+        balances[_from] -= _value;
+        Transfer(_from, _to, _value);
+        return true;
+    }
+    function levelUp(uint256 _answer_id) public returns (bool success){
+        Answer storage answer = answers[_answer_id];
+        if(answer.choosedAnswerCounter/10>0 && answer.choosedAnswerCounter<100){
+            answer.level = answer.choosedAnswerCounter /10;
+        }
+    }
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
         return allowed[_owner][_spender];
     }
