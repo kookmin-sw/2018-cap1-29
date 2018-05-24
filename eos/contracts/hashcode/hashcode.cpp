@@ -115,6 +115,33 @@ namespace eosio {
 
             }
 
+            void chooseanswer(const account_name account, uint64_t content_number, const account_name account_70, const account_name account_30){
+                require_auth(account);
+                hasherIndex hashers(_self, _self);
+                contentIndex contents(_self, _self);
+                auto currentContent = contents.get(content_number);
+                auto points = currentContent.points;
+
+                auto iterator = hashers.find(account);
+                eosio_assert(iterator != hashers.end(), "Your Address for account not found");
+                iterator = hashers.find(account_70);
+                eosio_assert(iterator != hashers.end(), "Receiver(70)'s Address for account not found");
+                hashers.modify(iterator, account_70, [&](auto& hasher){
+                    hasher.points = hasher.points + (0.7 * points);
+                });
+                iterator = hashers.find(account_30);
+                eosio_assert(iterator != hashers.end(), "Receiver(30)'s Address for account not found");
+                hashers.modify(iterator, account_30, [&](auto& hasher){
+                    hasher.points = hasher.points + (0.3 * points);
+                });
+                auto iter = contents.find(content_number);
+                eosio_assert(iter != contents.end(), "Wrong content number");
+                contents.modify(iter, content_number, [&](auto& content){
+                  content.writer_select_account = account_70;
+                  content.hasher_select_account = account_30;
+                });
+            }
+
         private:
             uint64_t current_no = 0;
 
@@ -152,5 +179,6 @@ namespace eosio {
 
 
     };
-    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent)(getcontent)(donate))
+    EOSIO_ABI(hashcode, (addhasher)(gethasher)(writecontent)(getcontent)(donate)(chooseanswer))
 }
+
