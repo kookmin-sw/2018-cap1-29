@@ -1,0 +1,1837 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'web3-eth' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData web3-eth
+8 silly fetchNamedPackageData web3-eth
+9 silly mapToRegistry name web3-eth
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'web3-eth',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'web3-eth',
+12 silly mapToRegistry   name: 'web3-eth',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/web3-eth
+14 verbose request uri https://registry.npmjs.org/web3-eth
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 02:53:47
+17 verbose request id a9162d461c05fe7b
+18 verbose etag "5ad0c545-9c7d"
+19 verbose lastModified Fri, 13 Apr 2018 14:57:09 GMT
+20 http request GET https://registry.npmjs.org/web3-eth
+21 http 304 https://registry.npmjs.org/web3-eth
+22 verbose headers { date: 'Thu, 24 May 2018 17:53:46 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: '"5ad0c545-9c7d"',
+22 verbose headers   age: '7110',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-hnd18727-HND',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1527184427.619969,VS0,VE1',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 24 May 2018 17:53:46 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: '"5ad0c545-9c7d"',
+23 silly get     age: '7110',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-hnd18727-HND',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1527184427.619969,VS0,VE1',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose etag https://registry.npmjs.org/web3-eth from cache
+25 verbose get saving web3-eth to C:\Users\goe eun park\AppData\Roaming\npm-cache\registry.npmjs.org\web3-eth\.cache.json
+26 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule web3-eth@1.0.0-beta.34 checking installable status
+40 silly cache add args [ 'web3-eth', null ]
+41 verbose cache add spec web3-eth
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'web3-eth',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'web3-eth',
+42 silly cache add   name: 'web3-eth',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed web3-eth@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for web3-eth
+45 info addNameTag [ 'web3-eth', 'latest' ]
+46 silly mapToRegistry name web3-eth
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'web3-eth',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'web3-eth',
+49 silly mapToRegistry   name: 'web3-eth',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/web3-eth
+51 verbose addNameTag registry:https://registry.npmjs.org/web3-eth not in flight; fetching
+52 verbose get https://registry.npmjs.org/web3-eth not expired, no request
+53 silly addNameTag next cb for web3-eth with tag latest
+54 silly addNamed web3-eth@1.0.0-beta.34
+55 verbose addNamed "1.0.0-beta.34" is a plain semver version for web3-eth
+56 silly cache afterAdd web3-eth@1.0.0-beta.34
+57 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\web3-eth\1.0.0-beta.34\package\package.json not in flight; writing
+58 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+59 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\web3-eth\1.0.0-beta.34\package\package.json written
+60 silly fetchNamedPackageData web3-eth-accounts
+61 silly mapToRegistry name web3-eth-accounts
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'web3-eth-accounts',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'web3-eth-accounts',
+64 silly mapToRegistry   name: 'web3-eth-accounts',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/web3-eth-accounts
+66 verbose request uri https://registry.npmjs.org/web3-eth-accounts
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 02:53:47
+69 verbose etag "5ad0c53e-87ca"
+70 verbose lastModified Fri, 13 Apr 2018 14:57:02 GMT
+71 http request GET https://registry.npmjs.org/web3-eth-accounts
+72 http 304 https://registry.npmjs.org/web3-eth-accounts
+73 verbose headers { date: 'Thu, 24 May 2018 17:53:46 GMT',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   'cache-control': 'max-age=300',
+73 verbose headers   etag: '"5ad0c53e-87ca"',
+73 verbose headers   age: '7076',
+73 verbose headers   connection: 'keep-alive',
+73 verbose headers   'x-served-by': 'cache-hnd18727-HND',
+73 verbose headers   'x-cache': 'HIT',
+73 verbose headers   'x-cache-hits': '1',
+73 verbose headers   'x-timer': 'S1527184427.966351,VS0,VE0',
+73 verbose headers   vary: 'Accept-Encoding, Accept' }
+74 silly get cb [ 304,
+74 silly get   { date: 'Thu, 24 May 2018 17:53:46 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     'cache-control': 'max-age=300',
+74 silly get     etag: '"5ad0c53e-87ca"',
+74 silly get     age: '7076',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-hnd18727-HND',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '1',
+74 silly get     'x-timer': 'S1527184427.966351,VS0,VE0',
+74 silly get     vary: 'Accept-Encoding, Accept' } ]
+75 verbose etag https://registry.npmjs.org/web3-eth-accounts from cache
+76 verbose get saving web3-eth-accounts to C:\Users\goe eun park\AppData\Roaming\npm-cache\registry.npmjs.org\web3-eth-accounts\.cache.json
+77 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+78 silly resolveWithNewModule web3-eth-accounts@1.0.0-beta.34 checking installable status
+79 silly cache add args [ 'web3-eth-accounts@1.0.0-beta.34', null ]
+80 verbose cache add spec web3-eth-accounts@1.0.0-beta.34
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'web3-eth-accounts@1.0.0-beta.34',
+81 silly cache add   scope: null,
+81 silly cache add   escapedName: 'web3-eth-accounts',
+81 silly cache add   name: 'web3-eth-accounts',
+81 silly cache add   rawSpec: '1.0.0-beta.34',
+81 silly cache add   spec: '1.0.0-beta.34',
+81 silly cache add   type: 'version' }
+82 silly addNamed web3-eth-accounts@1.0.0-beta.34
+83 verbose addNamed "1.0.0-beta.34" is a plain semver version for web3-eth-accounts
+84 silly mapToRegistry name web3-eth-accounts
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'web3-eth-accounts',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   escapedName: 'web3-eth-accounts',
+87 silly mapToRegistry   name: 'web3-eth-accounts',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npmjs.org/web3-eth-accounts
+89 verbose addNameVersion registry:https://registry.npmjs.org/web3-eth-accounts not in flight; fetching
+90 verbose get https://registry.npmjs.org/web3-eth-accounts not expired, no request
+91 silly cache afterAdd web3-eth-accounts@1.0.0-beta.34
+92 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\web3-eth-accounts\1.0.0-beta.34\package\package.json not in flight; writing
+93 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+94 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\web3-eth-accounts\1.0.0-beta.34\package\package.json written
+95 silly fetchNamedPackageData eth-lib
+96 silly mapToRegistry name eth-lib
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry data Result {
+99 silly mapToRegistry   raw: 'eth-lib',
+99 silly mapToRegistry   scope: null,
+99 silly mapToRegistry   escapedName: 'eth-lib',
+99 silly mapToRegistry   name: 'eth-lib',
+99 silly mapToRegistry   rawSpec: '',
+99 silly mapToRegistry   spec: 'latest',
+99 silly mapToRegistry   type: 'tag' }
+100 silly mapToRegistry uri https://registry.npmjs.org/eth-lib
+101 silly fetchNamedPackageData scrypt.js
+102 silly mapToRegistry name scrypt.js
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'scrypt.js',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   escapedName: 'scrypt.js',
+105 silly mapToRegistry   name: 'scrypt.js',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npmjs.org/scrypt.js
+107 silly fetchNamedPackageData uuid
+108 silly mapToRegistry name uuid
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry data Result {
+111 silly mapToRegistry   raw: 'uuid',
+111 silly mapToRegistry   scope: null,
+111 silly mapToRegistry   escapedName: 'uuid',
+111 silly mapToRegistry   name: 'uuid',
+111 silly mapToRegistry   rawSpec: '',
+111 silly mapToRegistry   spec: 'latest',
+111 silly mapToRegistry   type: 'tag' }
+112 silly mapToRegistry uri https://registry.npmjs.org/uuid
+113 verbose request uri https://registry.npmjs.org/eth-lib
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 02:53:47
+116 verbose etag "5a9f644f-bad9"
+117 verbose lastModified Wed, 7 Mar 2018 4:02:23 GMT
+118 http request GET https://registry.npmjs.org/eth-lib
+119 verbose request uri https://registry.npmjs.org/scrypt.js
+120 verbose request no auth needed
+121 info attempt registry request try #1 at 02:53:47
+122 verbose etag "571e5b3d-15c9"
+123 verbose lastModified Mon, 25 Apr 2016 18:00:29 GMT
+124 http request GET https://registry.npmjs.org/scrypt.js
+125 verbose request uri https://registry.npmjs.org/uuid
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 02:53:47
+128 verbose etag "5ad592b0-8518"
+129 verbose lastModified Tue, 17 Apr 2018 6:22:40 GMT
+130 http request GET https://registry.npmjs.org/uuid
+131 http 304 https://registry.npmjs.org/eth-lib
+132 verbose headers { date: 'Thu, 24 May 2018 17:53:47 GMT',
+132 verbose headers   via: '1.1 varnish',
+132 verbose headers   'cache-control': 'max-age=300',
+132 verbose headers   etag: '"5a9f644f-bad9"',
+132 verbose headers   age: '10318',
+132 verbose headers   connection: 'keep-alive',
+132 verbose headers   'x-served-by': 'cache-hnd18727-HND',
+132 verbose headers   'x-cache': 'HIT',
+132 verbose headers   'x-cache-hits': '1',
+132 verbose headers   'x-timer': 'S1527184427.155452,VS0,VE0',
+132 verbose headers   vary: 'Accept-Encoding, Accept' }
+133 silly get cb [ 304,
+133 silly get   { date: 'Thu, 24 May 2018 17:53:47 GMT',
+133 silly get     via: '1.1 varnish',
+133 silly get     'cache-control': 'max-age=300',
+133 silly get     etag: '"5a9f644f-bad9"',
+133 silly get     age: '10318',
+133 silly get     connection: 'keep-alive',
+133 silly get     'x-served-by': 'cache-hnd18727-HND',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '1',
+133 silly get     'x-timer': 'S1527184427.155452,VS0,VE0',
+133 silly get     vary: 'Accept-Encoding, Accept' } ]
+134 verbose etag https://registry.npmjs.org/eth-lib from cache
+135 verbose get saving eth-lib to C:\Users\goe eun park\AppData\Roaming\npm-cache\registry.npmjs.org\eth-lib\.cache.json
+136 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+137 silly resolveWithNewModule eth-lib@0.2.7 checking installable status
+138 silly cache add args [ 'eth-lib@0.2.7', null ]
+139 verbose cache add spec eth-lib@0.2.7
+140 silly cache add parsed spec Result {
+140 silly cache add   raw: 'eth-lib@0.2.7',
+140 silly cache add   scope: null,
+140 silly cache add   escapedName: 'eth-lib',
+140 silly cache add   name: 'eth-lib',
+140 silly cache add   rawSpec: '0.2.7',
+140 silly cache add   spec: '0.2.7',
+140 silly cache add   type: 'version' }
+141 silly addNamed eth-lib@0.2.7
+142 verbose addNamed "0.2.7" is a plain semver version for eth-lib
+143 silly mapToRegistry name eth-lib
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry data Result {
+146 silly mapToRegistry   raw: 'eth-lib',
+146 silly mapToRegistry   scope: null,
+146 silly mapToRegistry   escapedName: 'eth-lib',
+146 silly mapToRegistry   name: 'eth-lib',
+146 silly mapToRegistry   rawSpec: '',
+146 silly mapToRegistry   spec: 'latest',
+146 silly mapToRegistry   type: 'tag' }
+147 silly mapToRegistry uri https://registry.npmjs.org/eth-lib
+148 verbose addNameVersion registry:https://registry.npmjs.org/eth-lib not in flight; fetching
+149 verbose get https://registry.npmjs.org/eth-lib not expired, no request
+150 silly cache afterAdd eth-lib@0.2.7
+151 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\eth-lib\0.2.7\package\package.json not in flight; writing
+152 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+153 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\eth-lib\0.2.7\package\package.json written
+154 http 304 https://registry.npmjs.org/scrypt.js
+155 verbose headers { date: 'Thu, 24 May 2018 17:53:47 GMT',
+155 verbose headers   via: '1.1 varnish',
+155 verbose headers   'cache-control': 'max-age=300',
+155 verbose headers   etag: '"571e5b3d-15c9"',
+155 verbose headers   age: '7076',
+155 verbose headers   connection: 'keep-alive',
+155 verbose headers   'x-served-by': 'cache-hnd18720-HND',
+155 verbose headers   'x-cache': 'HIT',
+155 verbose headers   'x-cache-hits': '3',
+155 verbose headers   'x-timer': 'S1527184427.243719,VS0,VE0',
+155 verbose headers   vary: 'Accept-Encoding, Accept' }
+156 silly get cb [ 304,
+156 silly get   { date: 'Thu, 24 May 2018 17:53:47 GMT',
+156 silly get     via: '1.1 varnish',
+156 silly get     'cache-control': 'max-age=300',
+156 silly get     etag: '"571e5b3d-15c9"',
+156 silly get     age: '7076',
+156 silly get     connection: 'keep-alive',
+156 silly get     'x-served-by': 'cache-hnd18720-HND',
+156 silly get     'x-cache': 'HIT',
+156 silly get     'x-cache-hits': '3',
+156 silly get     'x-timer': 'S1527184427.243719,VS0,VE0',
+156 silly get     vary: 'Accept-Encoding, Accept' } ]
+157 verbose etag https://registry.npmjs.org/scrypt.js from cache
+158 verbose get saving scrypt.js to C:\Users\goe eun park\AppData\Roaming\npm-cache\registry.npmjs.org\scrypt.js\.cache.json
+159 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+160 http 304 https://registry.npmjs.org/uuid
+161 verbose headers { date: 'Thu, 24 May 2018 17:53:47 GMT',
+161 verbose headers   via: '1.1 varnish',
+161 verbose headers   'cache-control': 'max-age=300',
+161 verbose headers   etag: '"5ad592b0-8518"',
+161 verbose headers   age: '2324',
+161 verbose headers   connection: 'keep-alive',
+161 verbose headers   'x-served-by': 'cache-hnd18721-HND',
+161 verbose headers   'x-cache': 'HIT',
+161 verbose headers   'x-cache-hits': '6',
+161 verbose headers   'x-timer': 'S1527184427.251024,VS0,VE0',
+161 verbose headers   vary: 'Accept-Encoding, Accept' }
+162 silly get cb [ 304,
+162 silly get   { date: 'Thu, 24 May 2018 17:53:47 GMT',
+162 silly get     via: '1.1 varnish',
+162 silly get     'cache-control': 'max-age=300',
+162 silly get     etag: '"5ad592b0-8518"',
+162 silly get     age: '2324',
+162 silly get     connection: 'keep-alive',
+162 silly get     'x-served-by': 'cache-hnd18721-HND',
+162 silly get     'x-cache': 'HIT',
+162 silly get     'x-cache-hits': '6',
+162 silly get     'x-timer': 'S1527184427.251024,VS0,VE0',
+162 silly get     vary: 'Accept-Encoding, Accept' } ]
+163 verbose etag https://registry.npmjs.org/uuid from cache
+164 verbose get saving uuid to C:\Users\goe eun park\AppData\Roaming\npm-cache\registry.npmjs.org\uuid\.cache.json
+165 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+166 silly resolveWithNewModule scrypt.js@0.2.0 checking installable status
+167 silly cache add args [ 'scrypt.js@0.2.0', null ]
+168 verbose cache add spec scrypt.js@0.2.0
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'scrypt.js@0.2.0',
+169 silly cache add   scope: null,
+169 silly cache add   escapedName: 'scrypt.js',
+169 silly cache add   name: 'scrypt.js',
+169 silly cache add   rawSpec: '0.2.0',
+169 silly cache add   spec: '0.2.0',
+169 silly cache add   type: 'version' }
+170 silly addNamed scrypt.js@0.2.0
+171 verbose addNamed "0.2.0" is a plain semver version for scrypt.js
+172 silly mapToRegistry name scrypt.js
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry data Result {
+175 silly mapToRegistry   raw: 'scrypt.js',
+175 silly mapToRegistry   scope: null,
+175 silly mapToRegistry   escapedName: 'scrypt.js',
+175 silly mapToRegistry   name: 'scrypt.js',
+175 silly mapToRegistry   rawSpec: '',
+175 silly mapToRegistry   spec: 'latest',
+175 silly mapToRegistry   type: 'tag' }
+176 silly mapToRegistry uri https://registry.npmjs.org/scrypt.js
+177 verbose addNameVersion registry:https://registry.npmjs.org/scrypt.js not in flight; fetching
+178 silly resolveWithNewModule uuid@2.0.1 checking installable status
+179 silly cache add args [ 'uuid@2.0.1', null ]
+180 verbose cache add spec uuid@2.0.1
+181 silly cache add parsed spec Result {
+181 silly cache add   raw: 'uuid@2.0.1',
+181 silly cache add   scope: null,
+181 silly cache add   escapedName: 'uuid',
+181 silly cache add   name: 'uuid',
+181 silly cache add   rawSpec: '2.0.1',
+181 silly cache add   spec: '2.0.1',
+181 silly cache add   type: 'version' }
+182 silly addNamed uuid@2.0.1
+183 verbose addNamed "2.0.1" is a plain semver version for uuid
+184 silly mapToRegistry name uuid
+185 silly mapToRegistry using default registry
+186 silly mapToRegistry registry https://registry.npmjs.org/
+187 silly mapToRegistry data Result {
+187 silly mapToRegistry   raw: 'uuid',
+187 silly mapToRegistry   scope: null,
+187 silly mapToRegistry   escapedName: 'uuid',
+187 silly mapToRegistry   name: 'uuid',
+187 silly mapToRegistry   rawSpec: '',
+187 silly mapToRegistry   spec: 'latest',
+187 silly mapToRegistry   type: 'tag' }
+188 silly mapToRegistry uri https://registry.npmjs.org/uuid
+189 verbose addNameVersion registry:https://registry.npmjs.org/uuid not in flight; fetching
+190 verbose get https://registry.npmjs.org/scrypt.js not expired, no request
+191 verbose get https://registry.npmjs.org/uuid not expired, no request
+192 silly cache afterAdd scrypt.js@0.2.0
+193 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\scrypt.js\0.2.0\package\package.json not in flight; writing
+194 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+195 silly cache afterAdd uuid@2.0.1
+196 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\uuid\2.0.1\package\package.json not in flight; writing
+197 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+198 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\scrypt.js\0.2.0\package\package.json written
+199 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\uuid\2.0.1\package\package.json written
+200 silly fetchNamedPackageData scrypt
+201 silly mapToRegistry name scrypt
+202 silly mapToRegistry using default registry
+203 silly mapToRegistry registry https://registry.npmjs.org/
+204 silly mapToRegistry data Result {
+204 silly mapToRegistry   raw: 'scrypt',
+204 silly mapToRegistry   scope: null,
+204 silly mapToRegistry   escapedName: 'scrypt',
+204 silly mapToRegistry   name: 'scrypt',
+204 silly mapToRegistry   rawSpec: '',
+204 silly mapToRegistry   spec: 'latest',
+204 silly mapToRegistry   type: 'tag' }
+205 silly mapToRegistry uri https://registry.npmjs.org/scrypt
+206 verbose request uri https://registry.npmjs.org/scrypt
+207 verbose request no auth needed
+208 info attempt registry request try #1 at 02:53:48
+209 verbose etag "5a691a52-10d29"
+210 verbose lastModified Wed, 24 Jan 2018 23:44:18 GMT
+211 http request GET https://registry.npmjs.org/scrypt
+212 http 304 https://registry.npmjs.org/scrypt
+213 verbose headers { date: 'Thu, 24 May 2018 17:53:47 GMT',
+213 verbose headers   via: '1.1 varnish',
+213 verbose headers   'cache-control': 'max-age=300',
+213 verbose headers   etag: '"5a691a52-10d29"',
+213 verbose headers   age: '10211',
+213 verbose headers   connection: 'keep-alive',
+213 verbose headers   'x-served-by': 'cache-hnd18727-HND',
+213 verbose headers   'x-cache': 'HIT',
+213 verbose headers   'x-cache-hits': '2',
+213 verbose headers   'x-timer': 'S1527184427.358740,VS0,VE0',
+213 verbose headers   vary: 'Accept-Encoding, Accept' }
+214 silly get cb [ 304,
+214 silly get   { date: 'Thu, 24 May 2018 17:53:47 GMT',
+214 silly get     via: '1.1 varnish',
+214 silly get     'cache-control': 'max-age=300',
+214 silly get     etag: '"5a691a52-10d29"',
+214 silly get     age: '10211',
+214 silly get     connection: 'keep-alive',
+214 silly get     'x-served-by': 'cache-hnd18727-HND',
+214 silly get     'x-cache': 'HIT',
+214 silly get     'x-cache-hits': '2',
+214 silly get     'x-timer': 'S1527184427.358740,VS0,VE0',
+214 silly get     vary: 'Accept-Encoding, Accept' } ]
+215 verbose etag https://registry.npmjs.org/scrypt from cache
+216 verbose get saving scrypt to C:\Users\goe eun park\AppData\Roaming\npm-cache\registry.npmjs.org\scrypt\.cache.json
+217 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+218 silly resolveWithNewModule scrypt@6.0.3 checking installable status
+219 silly cache add args [ 'scrypt@^6.0.2', null ]
+220 verbose cache add spec scrypt@^6.0.2
+221 silly cache add parsed spec Result {
+221 silly cache add   raw: 'scrypt@^6.0.2',
+221 silly cache add   scope: null,
+221 silly cache add   escapedName: 'scrypt',
+221 silly cache add   name: 'scrypt',
+221 silly cache add   rawSpec: '^6.0.2',
+221 silly cache add   spec: '>=6.0.2 <7.0.0',
+221 silly cache add   type: 'range' }
+222 silly addNamed scrypt@>=6.0.2 <7.0.0
+223 verbose addNamed ">=6.0.2 <7.0.0" is a valid semver range for scrypt
+224 silly addNameRange { name: 'scrypt', range: '>=6.0.2 <7.0.0', hasData: false }
+225 silly mapToRegistry name scrypt
+226 silly mapToRegistry using default registry
+227 silly mapToRegistry registry https://registry.npmjs.org/
+228 silly mapToRegistry data Result {
+228 silly mapToRegistry   raw: 'scrypt',
+228 silly mapToRegistry   scope: null,
+228 silly mapToRegistry   escapedName: 'scrypt',
+228 silly mapToRegistry   name: 'scrypt',
+228 silly mapToRegistry   rawSpec: '',
+228 silly mapToRegistry   spec: 'latest',
+228 silly mapToRegistry   type: 'tag' }
+229 silly mapToRegistry uri https://registry.npmjs.org/scrypt
+230 verbose addNameRange registry:https://registry.npmjs.org/scrypt not in flight; fetching
+231 verbose get https://registry.npmjs.org/scrypt not expired, no request
+232 silly addNameRange number 2 { name: 'scrypt', range: '>=6.0.2 <7.0.0', hasData: true }
+233 silly addNameRange versions [ 'scrypt',
+233 silly addNameRange   [ '1.0.0',
+233 silly addNameRange     '1.1.0',
+233 silly addNameRange     '1.2.0',
+233 silly addNameRange     '1.3.0',
+233 silly addNameRange     '1.3.1',
+233 silly addNameRange     '1.4.0',
+233 silly addNameRange     '1.4.1',
+233 silly addNameRange     '1.4.2',
+233 silly addNameRange     '1.5.0',
+233 silly addNameRange     '1.5.1',
+233 silly addNameRange     '1.5.2',
+233 silly addNameRange     '1.5.3',
+233 silly addNameRange     '1.6.0',
+233 silly addNameRange     '1.6.1',
+233 silly addNameRange     '1.6.2',
+233 silly addNameRange     '1.6.3',
+233 silly addNameRange     '1.7.0',
+233 silly addNameRange     '1.7.1',
+233 silly addNameRange     '1.7.2',
+233 silly addNameRange     '1.7.3',
+233 silly addNameRange     '1.7.4',
+233 silly addNameRange     '2.0.0',
+233 silly addNameRange     '2.0.2',
+233 silly addNameRange     '3.0.0',
+233 silly addNameRange     '3.0.1',
+233 silly addNameRange     '4.0.0',
+233 silly addNameRange     '4.0.1',
+233 silly addNameRange     '4.0.2',
+233 silly addNameRange     '4.0.3',
+233 silly addNameRange     '4.0.4',
+233 silly addNameRange     '4.0.5',
+233 silly addNameRange     '4.0.6',
+233 silly addNameRange     '4.0.7',
+233 silly addNameRange     '5.0.0',
+233 silly addNameRange     '5.1.0-0',
+233 silly addNameRange     '5.1.0',
+233 silly addNameRange     '5.1.1',
+233 silly addNameRange     '5.2.0',
+233 silly addNameRange     '5.3.0',
+233 silly addNameRange     '5.4.0',
+233 silly addNameRange     '5.4.1',
+233 silly addNameRange     '6.0.0',
+233 silly addNameRange     '6.0.1',
+233 silly addNameRange     '6.0.2',
+233 silly addNameRange     '6.0.3' ] ]
+234 silly addNamed scrypt@6.0.3
+235 verbose addNamed "6.0.3" is a plain semver version for scrypt
+236 silly cache afterAdd scrypt@6.0.3
+237 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\scrypt\6.0.3\package\package.json not in flight; writing
+238 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+239 verbose afterAdd C:\Users\goe eun park\AppData\Roaming\npm-cache\scrypt\6.0.3\package\package.json written
+240 silly loadAllDepsIntoIdealTree Finishing
+241 silly loadIdealTree Finishing
+242 silly currentTree chainskills@1.0.0
+242 silly currentTree +-- accepts@1.3.5
+242 silly currentTree +-- ajv@5.5.2
+242 silly currentTree +-- any-promise@1.3.0
+242 silly currentTree +-- array-flatten@1.1.1
+242 silly currentTree +-- asn1.js@4.10.1
+242 silly currentTree +-- asn1@0.2.3
+242 silly currentTree +-- assert-plus@1.0.0
+242 silly currentTree +-- async-limiter@1.0.0
+242 silly currentTree +-- asynckit@0.4.0
+242 silly currentTree +-- aws-sign2@0.7.0
+242 silly currentTree +-- aws4@1.7.0
+242 silly currentTree +-- balanced-match@1.0.0
+242 silly currentTree +-- base64-js@1.3.0
+242 silly currentTree +-- bcrypt-pbkdf@1.0.1
+242 silly currentTree +-- bl@1.2.2
+242 silly currentTree +-- block-stream@0.0.9
+242 silly currentTree +-- bluebird@3.5.1
+242 silly currentTree +-- bn.js@4.11.8
+242 silly currentTree +-- body-parser@1.18.2
+242 silly currentTree +-- brace-expansion@1.1.11
+242 silly currentTree +-- brorand@1.1.0
+242 silly currentTree +-- browserify-aes@1.2.0
+242 silly currentTree +-- browserify-cipher@1.0.1
+242 silly currentTree +-- browserify-des@1.0.1
+242 silly currentTree +-- browserify-rsa@4.0.1
+242 silly currentTree +-- browserify-sha3@0.0.1
+242 silly currentTree +-- browserify-sign@4.0.4
+242 silly currentTree +-- buffer-alloc-unsafe@0.1.1
+242 silly currentTree +-- buffer-alloc@1.1.0
+242 silly currentTree +-- buffer-crc32@0.2.13
+242 silly currentTree +-- buffer-fill@0.1.1
+242 silly currentTree +-- buffer-to-arraybuffer@0.0.5
+242 silly currentTree +-- buffer-xor@1.0.3
+242 silly currentTree +-- buffer@5.1.0
+242 silly currentTree +-- bytes@3.0.0
+242 silly currentTree +-- caseless@0.12.0
+242 silly currentTree +-- cipher-base@1.0.4
+242 silly currentTree +-- co@4.6.0
+242 silly currentTree +-- combined-stream@1.0.6
+242 silly currentTree +-- commander@2.8.1
+242 silly currentTree +-- concat-map@0.0.1
+242 silly currentTree +-- content-disposition@0.5.2
+242 silly currentTree +-- content-type@1.0.4
+242 silly currentTree +-- cookie-signature@1.0.6
+242 silly currentTree +-- cookie@0.3.1
+242 silly currentTree +-- core-util-is@1.0.2
+242 silly currentTree +-- cors@2.8.4
+242 silly currentTree +-- create-ecdh@4.0.3
+242 silly currentTree +-- create-hash@1.2.0
+242 silly currentTree +-- create-hmac@1.1.7
+242 silly currentTree +-- crypto-browserify@3.12.0
+242 silly currentTree +-- dashdash@1.14.1
+242 silly currentTree +-- debug@2.6.9
+242 silly currentTree +-- decode-uri-component@0.2.0
+242 silly currentTree +-- decompress-response@3.3.0
+242 silly currentTree +-- decompress-tar@4.1.1
+242 silly currentTree +-- decompress-tarbz2@4.1.1
+242 silly currentTree | `-- file-type@6.2.0
+242 silly currentTree +-- decompress-targz@4.1.1
+242 silly currentTree +-- decompress-unzip@4.0.1
+242 silly currentTree | +-- file-type@3.9.0
+242 silly currentTree | `-- get-stream@2.3.1
+242 silly currentTree +-- decompress@4.2.0
+242 silly currentTree +-- delayed-stream@1.0.0
+242 silly currentTree +-- depd@1.1.2
+242 silly currentTree +-- des.js@1.0.0
+242 silly currentTree +-- destroy@1.0.4
+242 silly currentTree +-- diffie-hellman@5.0.3
+242 silly currentTree +-- dom-walk@0.1.1
+242 silly currentTree +-- duplexer3@0.1.4
+242 silly currentTree +-- ecc-jsbn@0.1.1
+242 silly currentTree +-- ee-first@1.1.1
+242 silly currentTree +-- elliptic@6.4.0
+242 silly currentTree +-- encodeurl@1.0.2
+242 silly currentTree +-- end-of-stream@1.4.1
+242 silly currentTree +-- escape-html@1.0.3
+242 silly currentTree +-- etag@1.8.1
+242 silly currentTree +-- eth-lib@0.1.27
+242 silly currentTree +-- ethjs-unit@0.1.6
+242 silly currentTree | `-- bn.js@4.11.6
+242 silly currentTree +-- eventemitter3@1.1.1
+242 silly currentTree +-- evp_bytestokey@1.0.3
+242 silly currentTree +-- express@4.16.3
+242 silly currentTree +-- extend@3.0.1
+242 silly currentTree +-- extsprintf@1.3.0
+242 silly currentTree +-- fast-deep-equal@1.1.0
+242 silly currentTree +-- fast-json-stable-stringify@2.0.0
+242 silly currentTree +-- fd-slicer@1.0.1
+242 silly currentTree +-- file-type@5.2.0
+242 silly currentTree +-- finalhandler@1.1.1
+242 silly currentTree +-- for-each@0.3.2
+242 silly currentTree +-- forever-agent@0.6.1
+242 silly currentTree +-- form-data@2.3.2
+242 silly currentTree +-- forwarded@0.1.2
+242 silly currentTree +-- fresh@0.5.2
+242 silly currentTree +-- fs-constants@1.0.0
+242 silly currentTree +-- fs-extra@2.1.2
+242 silly currentTree +-- fs-promise@2.0.3
+242 silly currentTree +-- fs.realpath@1.0.0
+242 silly currentTree +-- fstream@1.0.11
+242 silly currentTree +-- get-stream@3.0.0
+242 silly currentTree +-- getpass@0.1.7
+242 silly currentTree +-- glob@7.1.2
+242 silly currentTree +-- global@4.3.2
+242 silly currentTree +-- got@7.1.0
+242 silly currentTree +-- graceful-fs@4.1.11
+242 silly currentTree +-- graceful-readlink@1.0.1
+242 silly currentTree +-- har-schema@2.0.0
+242 silly currentTree +-- har-validator@5.0.3
+242 silly currentTree +-- has-symbol-support-x@1.4.2
+242 silly currentTree +-- has-to-string-tag-x@1.4.1
+242 silly currentTree +-- hash-base@3.0.4
+242 silly currentTree +-- hash.js@1.1.3
+242 silly currentTree +-- hmac-drbg@1.0.1
+242 silly currentTree +-- http-errors@1.6.3
+242 silly currentTree +-- http-https@1.0.0
+242 silly currentTree +-- http-signature@1.2.0
+242 silly currentTree +-- iconv-lite@0.4.19
+242 silly currentTree +-- ieee754@1.1.11
+242 silly currentTree +-- inflight@1.0.6
+242 silly currentTree +-- inherits@2.0.3
+242 silly currentTree +-- ipaddr.js@1.6.0
+242 silly currentTree +-- is-function@1.0.1
+242 silly currentTree +-- is-hex-prefixed@1.0.0
+242 silly currentTree +-- is-natural-number@4.0.1
+242 silly currentTree +-- is-object@1.0.1
+242 silly currentTree +-- is-plain-obj@1.1.0
+242 silly currentTree +-- is-retry-allowed@1.1.0
+242 silly currentTree +-- is-stream@1.1.0
+242 silly currentTree +-- is-typedarray@1.0.0
+242 silly currentTree +-- isarray@1.0.0
+242 silly currentTree +-- isstream@0.1.2
+242 silly currentTree +-- isurl@1.0.0
+242 silly currentTree +-- js-sha3@0.3.1
+242 silly currentTree +-- jsbn@0.1.1
+242 silly currentTree +-- json-schema-traverse@0.3.1
+242 silly currentTree +-- json-schema@0.2.3
+242 silly currentTree +-- json-stringify-safe@5.0.1
+242 silly currentTree +-- jsonfile@2.4.0
+242 silly currentTree +-- jsprim@1.4.1
+242 silly currentTree +-- keccakjs@0.2.1
+242 silly currentTree +-- lowercase-keys@1.0.1
+242 silly currentTree +-- make-dir@1.3.0
+242 silly currentTree | `-- pify@3.0.0
+242 silly currentTree +-- md5.js@1.3.4
+242 silly currentTree +-- media-typer@0.3.0
+242 silly currentTree +-- merge-descriptors@1.0.1
+242 silly currentTree +-- methods@1.1.2
+242 silly currentTree +-- miller-rabin@4.0.1
+242 silly currentTree +-- mime-db@1.33.0
+242 silly currentTree +-- mime-types@2.1.18
+242 silly currentTree +-- mime@1.4.1
+242 silly currentTree +-- mimic-response@1.0.0
+242 silly currentTree +-- min-document@2.19.0
+242 silly currentTree +-- minimalistic-assert@1.0.1
+242 silly currentTree +-- minimalistic-crypto-utils@1.0.1
+242 silly currentTree +-- minimatch@3.0.4
+242 silly currentTree +-- minimist@0.0.8
+242 silly currentTree +-- mkdirp-promise@5.0.1
+242 silly currentTree +-- mkdirp@0.5.1
+242 silly currentTree +-- mock-fs@4.5.0
+242 silly currentTree +-- mout@0.11.1
+242 silly currentTree +-- ms@2.0.0
+242 silly currentTree +-- mz@2.7.0
+242 silly currentTree +-- nan@2.10.0
+242 silly currentTree +-- nano-json-stream-parser@0.1.2
+242 silly currentTree +-- negotiator@0.6.1
+242 silly currentTree +-- number-to-bn@1.7.0
+242 silly currentTree | `-- bn.js@4.11.6
+242 silly currentTree +-- oauth-sign@0.8.2
+242 silly currentTree +-- object-assign@4.1.1
+242 silly currentTree +-- oboe@2.1.3
+242 silly currentTree +-- on-finished@2.3.0
+242 silly currentTree +-- once@1.4.0
+242 silly currentTree +-- p-cancelable@0.3.0
+242 silly currentTree +-- p-finally@1.0.0
+242 silly currentTree +-- p-timeout@1.2.1
+242 silly currentTree +-- parse-asn1@5.1.1
+242 silly currentTree +-- parse-headers@2.0.1
+242 silly currentTree +-- parseurl@1.3.2
+242 silly currentTree +-- path-is-absolute@1.0.1
+242 silly currentTree +-- path-to-regexp@0.1.7
+242 silly currentTree +-- pbkdf2@3.0.16
+242 silly currentTree +-- pend@1.2.0
+242 silly currentTree +-- performance-now@2.1.0
+242 silly currentTree +-- pify@2.3.0
+242 silly currentTree +-- pinkie-promise@2.0.1
+242 silly currentTree +-- pinkie@2.0.4
+242 silly currentTree +-- prepend-http@1.0.4
+242 silly currentTree +-- process-nextick-args@2.0.0
+242 silly currentTree +-- process@0.5.2
+242 silly currentTree +-- proxy-addr@2.0.3
+242 silly currentTree +-- public-encrypt@4.0.2
+242 silly currentTree +-- punycode@1.4.1
+242 silly currentTree +-- qs@6.5.1
+242 silly currentTree +-- query-string@5.1.1
+242 silly currentTree +-- randombytes@2.0.6
+242 silly currentTree +-- randomfill@1.0.4
+242 silly currentTree +-- randomhex@0.1.5
+242 silly currentTree +-- range-parser@1.2.0
+242 silly currentTree +-- raw-body@2.3.2
+242 silly currentTree | +-- depd@1.1.1
+242 silly currentTree | +-- http-errors@1.6.2
+242 silly currentTree | `-- setprototypeof@1.0.3
+242 silly currentTree +-- readable-stream@2.3.6
+242 silly currentTree +-- request@2.87.0
+242 silly currentTree +-- rimraf@2.6.2
+242 silly currentTree +-- ripemd160@2.0.2
+242 silly currentTree +-- safe-buffer@5.1.1
+242 silly currentTree +-- scryptsy@1.2.1
+242 silly currentTree +-- seek-bzip@1.0.5
+242 silly currentTree +-- send@0.16.2
+242 silly currentTree +-- serve-static@1.13.2
+242 silly currentTree +-- servify@0.1.12
+242 silly currentTree +-- setimmediate@1.0.5
+242 silly currentTree +-- setprototypeof@1.1.0
+242 silly currentTree +-- sha.js@2.4.11
+242 silly currentTree +-- sha3@1.2.2
+242 silly currentTree +-- simple-concat@1.0.0
+242 silly currentTree +-- simple-get@2.8.1
+242 silly currentTree +-- sshpk@1.14.1
+242 silly currentTree +-- statuses@1.4.0
+242 silly currentTree +-- strict-uri-encode@1.1.0
+242 silly currentTree +-- string_decoder@1.1.1
+242 silly currentTree +-- strip-dirs@2.1.0
+242 silly currentTree +-- strip-hex-prefix@1.0.0
+242 silly currentTree +-- swarm-js@0.1.37
+242 silly currentTree +-- tar-stream@1.6.1
+242 silly currentTree +-- tar.gz@1.0.7
+242 silly currentTree | `-- bluebird@2.11.0
+242 silly currentTree +-- tar@2.2.1
+242 silly currentTree +-- thenify-all@1.6.0
+242 silly currentTree +-- thenify@3.3.0
+242 silly currentTree +-- through@2.3.8
+242 silly currentTree +-- timed-out@4.0.1
+242 silly currentTree +-- to-buffer@1.1.1
+242 silly currentTree +-- tough-cookie@2.3.4
+242 silly currentTree +-- trim@0.0.1
+242 silly currentTree +-- tunnel-agent@0.6.0
+242 silly currentTree +-- tweetnacl@0.14.5
+242 silly currentTree +-- type-is@1.6.16
+242 silly currentTree +-- typedarray-to-buffer@3.1.5
+242 silly currentTree +-- ultron@1.1.1
+242 silly currentTree +-- unbzip2-stream@1.2.5
+242 silly currentTree | +-- base64-js@0.0.8
+242 silly currentTree | `-- buffer@3.6.0
+242 silly currentTree +-- underscore@1.8.3
+242 silly currentTree +-- unpipe@1.0.0
+242 silly currentTree +-- url-parse-lax@1.0.0
+242 silly currentTree +-- url-set-query@1.0.0
+242 silly currentTree +-- url-to-options@1.0.1
+242 silly currentTree +-- utf8@2.1.1
+242 silly currentTree +-- util-deprecate@1.0.2
+242 silly currentTree +-- utils-merge@1.0.1
+242 silly currentTree +-- uuid@3.2.1
+242 silly currentTree +-- vary@1.1.2
+242 silly currentTree +-- verror@1.10.0
+242 silly currentTree +-- web3-bzz@1.0.0-beta.34
+242 silly currentTree +-- web3-core-helpers@1.0.0-beta.34
+242 silly currentTree +-- web3-core-method@1.0.0-beta.34
+242 silly currentTree +-- web3-core-promievent@1.0.0-beta.34
+242 silly currentTree +-- web3-core-requestmanager@1.0.0-beta.34
+242 silly currentTree +-- web3-core-subscriptions@1.0.0-beta.34
+242 silly currentTree +-- web3-core@1.0.0-beta.34
+242 silly currentTree +-- web3-eth-abi@1.0.0-beta.34
+242 silly currentTree | `-- bn.js@4.11.6
+242 silly currentTree +-- web3-eth-contract@1.0.0-beta.34
+242 silly currentTree +-- web3-eth-iban@1.0.0-beta.34
+242 silly currentTree | `-- bn.js@4.11.6
+242 silly currentTree +-- web3-eth-personal@1.0.0-beta.34
+242 silly currentTree +-- web3-net@1.0.0-beta.34
+242 silly currentTree +-- web3-providers-http@1.0.0-beta.34
+242 silly currentTree +-- web3-providers-ipc@1.0.0-beta.34
+242 silly currentTree +-- web3-providers-ws@1.0.0-beta.34
+242 silly currentTree +-- web3-shh@1.0.0-beta.34
+242 silly currentTree +-- web3-utils@1.0.0-beta.34
+242 silly currentTree | `-- bn.js@4.11.6
+242 silly currentTree +-- websocket@1.0.26
+242 silly currentTree +-- wrappy@1.0.2
+242 silly currentTree +-- ws@3.3.3
+242 silly currentTree +-- xhr-request-promise@0.1.2
+242 silly currentTree +-- xhr-request@1.1.0
+242 silly currentTree +-- xhr@2.5.0
+242 silly currentTree +-- xhr2@0.1.4
+242 silly currentTree +-- xtend@4.0.1
+242 silly currentTree +-- yaeti@0.0.6
+242 silly currentTree `-- yauzl@2.9.1
+243 silly idealTree chainskills@1.0.0
+243 silly idealTree +-- accepts@1.3.5
+243 silly idealTree +-- ajv@5.5.2
+243 silly idealTree +-- any-promise@1.3.0
+243 silly idealTree +-- array-flatten@1.1.1
+243 silly idealTree +-- asn1.js@4.10.1
+243 silly idealTree +-- asn1@0.2.3
+243 silly idealTree +-- assert-plus@1.0.0
+243 silly idealTree +-- async-limiter@1.0.0
+243 silly idealTree +-- asynckit@0.4.0
+243 silly idealTree +-- aws-sign2@0.7.0
+243 silly idealTree +-- aws4@1.7.0
+243 silly idealTree +-- balanced-match@1.0.0
+243 silly idealTree +-- base64-js@1.3.0
+243 silly idealTree +-- bcrypt-pbkdf@1.0.1
+243 silly idealTree +-- bl@1.2.2
+243 silly idealTree +-- block-stream@0.0.9
+243 silly idealTree +-- bluebird@3.5.1
+243 silly idealTree +-- bn.js@4.11.8
+243 silly idealTree +-- body-parser@1.18.2
+243 silly idealTree +-- brace-expansion@1.1.11
+243 silly idealTree +-- brorand@1.1.0
+243 silly idealTree +-- browserify-aes@1.2.0
+243 silly idealTree +-- browserify-cipher@1.0.1
+243 silly idealTree +-- browserify-des@1.0.1
+243 silly idealTree +-- browserify-rsa@4.0.1
+243 silly idealTree +-- browserify-sha3@0.0.1
+243 silly idealTree +-- browserify-sign@4.0.4
+243 silly idealTree +-- buffer-alloc-unsafe@0.1.1
+243 silly idealTree +-- buffer-alloc@1.1.0
+243 silly idealTree +-- buffer-crc32@0.2.13
+243 silly idealTree +-- buffer-fill@0.1.1
+243 silly idealTree +-- buffer-to-arraybuffer@0.0.5
+243 silly idealTree +-- buffer-xor@1.0.3
+243 silly idealTree +-- buffer@5.1.0
+243 silly idealTree +-- bytes@3.0.0
+243 silly idealTree +-- caseless@0.12.0
+243 silly idealTree +-- cipher-base@1.0.4
+243 silly idealTree +-- co@4.6.0
+243 silly idealTree +-- combined-stream@1.0.6
+243 silly idealTree +-- commander@2.8.1
+243 silly idealTree +-- concat-map@0.0.1
+243 silly idealTree +-- content-disposition@0.5.2
+243 silly idealTree +-- content-type@1.0.4
+243 silly idealTree +-- cookie-signature@1.0.6
+243 silly idealTree +-- cookie@0.3.1
+243 silly idealTree +-- core-util-is@1.0.2
+243 silly idealTree +-- cors@2.8.4
+243 silly idealTree +-- create-ecdh@4.0.3
+243 silly idealTree +-- create-hash@1.2.0
+243 silly idealTree +-- create-hmac@1.1.7
+243 silly idealTree +-- crypto-browserify@3.12.0
+243 silly idealTree +-- dashdash@1.14.1
+243 silly idealTree +-- debug@2.6.9
+243 silly idealTree +-- decode-uri-component@0.2.0
+243 silly idealTree +-- decompress-response@3.3.0
+243 silly idealTree +-- decompress-tar@4.1.1
+243 silly idealTree +-- decompress-tarbz2@4.1.1
+243 silly idealTree | `-- file-type@6.2.0
+243 silly idealTree +-- decompress-targz@4.1.1
+243 silly idealTree +-- decompress-unzip@4.0.1
+243 silly idealTree | +-- file-type@3.9.0
+243 silly idealTree | `-- get-stream@2.3.1
+243 silly idealTree +-- decompress@4.2.0
+243 silly idealTree +-- delayed-stream@1.0.0
+243 silly idealTree +-- depd@1.1.2
+243 silly idealTree +-- des.js@1.0.0
+243 silly idealTree +-- destroy@1.0.4
+243 silly idealTree +-- diffie-hellman@5.0.3
+243 silly idealTree +-- dom-walk@0.1.1
+243 silly idealTree +-- duplexer3@0.1.4
+243 silly idealTree +-- ecc-jsbn@0.1.1
+243 silly idealTree +-- ee-first@1.1.1
+243 silly idealTree +-- elliptic@6.4.0
+243 silly idealTree +-- encodeurl@1.0.2
+243 silly idealTree +-- end-of-stream@1.4.1
+243 silly idealTree +-- escape-html@1.0.3
+243 silly idealTree +-- etag@1.8.1
+243 silly idealTree +-- eth-lib@0.1.27
+243 silly idealTree +-- ethjs-unit@0.1.6
+243 silly idealTree | `-- bn.js@4.11.6
+243 silly idealTree +-- eventemitter3@1.1.1
+243 silly idealTree +-- evp_bytestokey@1.0.3
+243 silly idealTree +-- express@4.16.3
+243 silly idealTree +-- extend@3.0.1
+243 silly idealTree +-- extsprintf@1.3.0
+243 silly idealTree +-- fast-deep-equal@1.1.0
+243 silly idealTree +-- fast-json-stable-stringify@2.0.0
+243 silly idealTree +-- fd-slicer@1.0.1
+243 silly idealTree +-- file-type@5.2.0
+243 silly idealTree +-- finalhandler@1.1.1
+243 silly idealTree +-- for-each@0.3.2
+243 silly idealTree +-- forever-agent@0.6.1
+243 silly idealTree +-- form-data@2.3.2
+243 silly idealTree +-- forwarded@0.1.2
+243 silly idealTree +-- fresh@0.5.2
+243 silly idealTree +-- fs-constants@1.0.0
+243 silly idealTree +-- fs-extra@2.1.2
+243 silly idealTree +-- fs-promise@2.0.3
+243 silly idealTree +-- fs.realpath@1.0.0
+243 silly idealTree +-- fstream@1.0.11
+243 silly idealTree +-- get-stream@3.0.0
+243 silly idealTree +-- getpass@0.1.7
+243 silly idealTree +-- glob@7.1.2
+243 silly idealTree +-- global@4.3.2
+243 silly idealTree +-- got@7.1.0
+243 silly idealTree +-- graceful-fs@4.1.11
+243 silly idealTree +-- graceful-readlink@1.0.1
+243 silly idealTree +-- har-schema@2.0.0
+243 silly idealTree +-- har-validator@5.0.3
+243 silly idealTree +-- has-symbol-support-x@1.4.2
+243 silly idealTree +-- has-to-string-tag-x@1.4.1
+243 silly idealTree +-- hash-base@3.0.4
+243 silly idealTree +-- hash.js@1.1.3
+243 silly idealTree +-- hmac-drbg@1.0.1
+243 silly idealTree +-- http-errors@1.6.3
+243 silly idealTree +-- http-https@1.0.0
+243 silly idealTree +-- http-signature@1.2.0
+243 silly idealTree +-- iconv-lite@0.4.19
+243 silly idealTree +-- ieee754@1.1.11
+243 silly idealTree +-- inflight@1.0.6
+243 silly idealTree +-- inherits@2.0.3
+243 silly idealTree +-- ipaddr.js@1.6.0
+243 silly idealTree +-- is-function@1.0.1
+243 silly idealTree +-- is-hex-prefixed@1.0.0
+243 silly idealTree +-- is-natural-number@4.0.1
+243 silly idealTree +-- is-object@1.0.1
+243 silly idealTree +-- is-plain-obj@1.1.0
+243 silly idealTree +-- is-retry-allowed@1.1.0
+243 silly idealTree +-- is-stream@1.1.0
+243 silly idealTree +-- is-typedarray@1.0.0
+243 silly idealTree +-- isarray@1.0.0
+243 silly idealTree +-- isstream@0.1.2
+243 silly idealTree +-- isurl@1.0.0
+243 silly idealTree +-- js-sha3@0.3.1
+243 silly idealTree +-- jsbn@0.1.1
+243 silly idealTree +-- json-schema-traverse@0.3.1
+243 silly idealTree +-- json-schema@0.2.3
+243 silly idealTree +-- json-stringify-safe@5.0.1
+243 silly idealTree +-- jsonfile@2.4.0
+243 silly idealTree +-- jsprim@1.4.1
+243 silly idealTree +-- keccakjs@0.2.1
+243 silly idealTree +-- lowercase-keys@1.0.1
+243 silly idealTree +-- make-dir@1.3.0
+243 silly idealTree | `-- pify@3.0.0
+243 silly idealTree +-- md5.js@1.3.4
+243 silly idealTree +-- media-typer@0.3.0
+243 silly idealTree +-- merge-descriptors@1.0.1
+243 silly idealTree +-- methods@1.1.2
+243 silly idealTree +-- miller-rabin@4.0.1
+243 silly idealTree +-- mime-db@1.33.0
+243 silly idealTree +-- mime-types@2.1.18
+243 silly idealTree +-- mime@1.4.1
+243 silly idealTree +-- mimic-response@1.0.0
+243 silly idealTree +-- min-document@2.19.0
+243 silly idealTree +-- minimalistic-assert@1.0.1
+243 silly idealTree +-- minimalistic-crypto-utils@1.0.1
+243 silly idealTree +-- minimatch@3.0.4
+243 silly idealTree +-- minimist@0.0.8
+243 silly idealTree +-- mkdirp-promise@5.0.1
+243 silly idealTree +-- mkdirp@0.5.1
+243 silly idealTree +-- mock-fs@4.5.0
+243 silly idealTree +-- mout@0.11.1
+243 silly idealTree +-- ms@2.0.0
+243 silly idealTree +-- mz@2.7.0
+243 silly idealTree +-- nan@2.10.0
+243 silly idealTree +-- nano-json-stream-parser@0.1.2
+243 silly idealTree +-- negotiator@0.6.1
+243 silly idealTree +-- number-to-bn@1.7.0
+243 silly idealTree | `-- bn.js@4.11.6
+243 silly idealTree +-- oauth-sign@0.8.2
+243 silly idealTree +-- object-assign@4.1.1
+243 silly idealTree +-- oboe@2.1.3
+243 silly idealTree +-- on-finished@2.3.0
+243 silly idealTree +-- once@1.4.0
+243 silly idealTree +-- p-cancelable@0.3.0
+243 silly idealTree +-- p-finally@1.0.0
+243 silly idealTree +-- p-timeout@1.2.1
+243 silly idealTree +-- parse-asn1@5.1.1
+243 silly idealTree +-- parse-headers@2.0.1
+243 silly idealTree +-- parseurl@1.3.2
+243 silly idealTree +-- path-is-absolute@1.0.1
+243 silly idealTree +-- path-to-regexp@0.1.7
+243 silly idealTree +-- pbkdf2@3.0.16
+243 silly idealTree +-- pend@1.2.0
+243 silly idealTree +-- performance-now@2.1.0
+243 silly idealTree +-- pify@2.3.0
+243 silly idealTree +-- pinkie-promise@2.0.1
+243 silly idealTree +-- pinkie@2.0.4
+243 silly idealTree +-- prepend-http@1.0.4
+243 silly idealTree +-- process-nextick-args@2.0.0
+243 silly idealTree +-- process@0.5.2
+243 silly idealTree +-- proxy-addr@2.0.3
+243 silly idealTree +-- public-encrypt@4.0.2
+243 silly idealTree +-- punycode@1.4.1
+243 silly idealTree +-- qs@6.5.1
+243 silly idealTree +-- query-string@5.1.1
+243 silly idealTree +-- randombytes@2.0.6
+243 silly idealTree +-- randomfill@1.0.4
+243 silly idealTree +-- randomhex@0.1.5
+243 silly idealTree +-- range-parser@1.2.0
+243 silly idealTree +-- raw-body@2.3.2
+243 silly idealTree | +-- depd@1.1.1
+243 silly idealTree | +-- http-errors@1.6.2
+243 silly idealTree | `-- setprototypeof@1.0.3
+243 silly idealTree +-- readable-stream@2.3.6
+243 silly idealTree +-- request@2.87.0
+243 silly idealTree +-- rimraf@2.6.2
+243 silly idealTree +-- ripemd160@2.0.2
+243 silly idealTree +-- safe-buffer@5.1.1
+243 silly idealTree +-- scrypt.js@0.2.0
+243 silly idealTree +-- scrypt@6.0.3
+243 silly idealTree +-- scryptsy@1.2.1
+243 silly idealTree +-- seek-bzip@1.0.5
+243 silly idealTree +-- send@0.16.2
+243 silly idealTree +-- serve-static@1.13.2
+243 silly idealTree +-- servify@0.1.12
+243 silly idealTree +-- setimmediate@1.0.5
+243 silly idealTree +-- setprototypeof@1.1.0
+243 silly idealTree +-- sha.js@2.4.11
+243 silly idealTree +-- sha3@1.2.2
+243 silly idealTree +-- simple-concat@1.0.0
+243 silly idealTree +-- simple-get@2.8.1
+243 silly idealTree +-- sshpk@1.14.1
+243 silly idealTree +-- statuses@1.4.0
+243 silly idealTree +-- strict-uri-encode@1.1.0
+243 silly idealTree +-- string_decoder@1.1.1
+243 silly idealTree +-- strip-dirs@2.1.0
+243 silly idealTree +-- strip-hex-prefix@1.0.0
+243 silly idealTree +-- swarm-js@0.1.37
+243 silly idealTree +-- tar-stream@1.6.1
+243 silly idealTree +-- tar.gz@1.0.7
+243 silly idealTree | `-- bluebird@2.11.0
+243 silly idealTree +-- tar@2.2.1
+243 silly idealTree +-- thenify-all@1.6.0
+243 silly idealTree +-- thenify@3.3.0
+243 silly idealTree +-- through@2.3.8
+243 silly idealTree +-- timed-out@4.0.1
+243 silly idealTree +-- to-buffer@1.1.1
+243 silly idealTree +-- tough-cookie@2.3.4
+243 silly idealTree +-- trim@0.0.1
+243 silly idealTree +-- tunnel-agent@0.6.0
+243 silly idealTree +-- tweetnacl@0.14.5
+243 silly idealTree +-- type-is@1.6.16
+243 silly idealTree +-- typedarray-to-buffer@3.1.5
+243 silly idealTree +-- ultron@1.1.1
+243 silly idealTree +-- unbzip2-stream@1.2.5
+243 silly idealTree | +-- base64-js@0.0.8
+243 silly idealTree | `-- buffer@3.6.0
+243 silly idealTree +-- underscore@1.8.3
+243 silly idealTree +-- unpipe@1.0.0
+243 silly idealTree +-- url-parse-lax@1.0.0
+243 silly idealTree +-- url-set-query@1.0.0
+243 silly idealTree +-- url-to-options@1.0.1
+243 silly idealTree +-- utf8@2.1.1
+243 silly idealTree +-- util-deprecate@1.0.2
+243 silly idealTree +-- utils-merge@1.0.1
+243 silly idealTree +-- uuid@3.2.1
+243 silly idealTree +-- vary@1.1.2
+243 silly idealTree +-- verror@1.10.0
+243 silly idealTree +-- web3-bzz@1.0.0-beta.34
+243 silly idealTree +-- web3-core-helpers@1.0.0-beta.34
+243 silly idealTree +-- web3-core-method@1.0.0-beta.34
+243 silly idealTree +-- web3-core-promievent@1.0.0-beta.34
+243 silly idealTree +-- web3-core-requestmanager@1.0.0-beta.34
+243 silly idealTree +-- web3-core-subscriptions@1.0.0-beta.34
+243 silly idealTree +-- web3-core@1.0.0-beta.34
+243 silly idealTree +-- web3-eth-abi@1.0.0-beta.34
+243 silly idealTree | `-- bn.js@4.11.6
+243 silly idealTree +-- web3-eth-accounts@1.0.0-beta.34
+243 silly idealTree | +-- eth-lib@0.2.7
+243 silly idealTree | `-- uuid@2.0.1
+243 silly idealTree +-- web3-eth-contract@1.0.0-beta.34
+243 silly idealTree +-- web3-eth-iban@1.0.0-beta.34
+243 silly idealTree | `-- bn.js@4.11.6
+243 silly idealTree +-- web3-eth-personal@1.0.0-beta.34
+243 silly idealTree +-- web3-eth@1.0.0-beta.34
+243 silly idealTree +-- web3-net@1.0.0-beta.34
+243 silly idealTree +-- web3-providers-http@1.0.0-beta.34
+243 silly idealTree +-- web3-providers-ipc@1.0.0-beta.34
+243 silly idealTree +-- web3-providers-ws@1.0.0-beta.34
+243 silly idealTree +-- web3-shh@1.0.0-beta.34
+243 silly idealTree +-- web3-utils@1.0.0-beta.34
+243 silly idealTree | `-- bn.js@4.11.6
+243 silly idealTree +-- websocket@1.0.26
+243 silly idealTree +-- wrappy@1.0.2
+243 silly idealTree +-- ws@3.3.3
+243 silly idealTree +-- xhr-request-promise@0.1.2
+243 silly idealTree +-- xhr-request@1.1.0
+243 silly idealTree +-- xhr@2.5.0
+243 silly idealTree +-- xhr2@0.1.4
+243 silly idealTree +-- xtend@4.0.1
+243 silly idealTree +-- yaeti@0.0.6
+243 silly idealTree `-- yauzl@2.9.1
+244 silly generateActionsToTake Starting
+245 silly install generateActionsToTake
+246 silly generateActionsToTake Finishing
+247 silly diffTrees action count 6
+248 silly diffTrees add scrypt@6.0.3
+249 silly diffTrees add scrypt.js@0.2.0
+250 silly diffTrees add eth-lib@0.2.7
+251 silly diffTrees add uuid@2.0.1
+252 silly diffTrees add web3-eth-accounts@1.0.0-beta.34
+253 silly diffTrees add web3-eth@1.0.0-beta.34
+254 silly decomposeActions action count 48
+255 silly decomposeActions fetch scrypt@6.0.3
+256 silly decomposeActions extract scrypt@6.0.3
+257 silly decomposeActions test scrypt@6.0.3
+258 silly decomposeActions preinstall scrypt@6.0.3
+259 silly decomposeActions build scrypt@6.0.3
+260 silly decomposeActions install scrypt@6.0.3
+261 silly decomposeActions postinstall scrypt@6.0.3
+262 silly decomposeActions finalize scrypt@6.0.3
+263 silly decomposeActions fetch scrypt.js@0.2.0
+264 silly decomposeActions extract scrypt.js@0.2.0
+265 silly decomposeActions test scrypt.js@0.2.0
+266 silly decomposeActions preinstall scrypt.js@0.2.0
+267 silly decomposeActions build scrypt.js@0.2.0
+268 silly decomposeActions install scrypt.js@0.2.0
+269 silly decomposeActions postinstall scrypt.js@0.2.0
+270 silly decomposeActions finalize scrypt.js@0.2.0
+271 silly decomposeActions fetch eth-lib@0.2.7
+272 silly decomposeActions extract eth-lib@0.2.7
+273 silly decomposeActions test eth-lib@0.2.7
+274 silly decomposeActions preinstall eth-lib@0.2.7
+275 silly decomposeActions build eth-lib@0.2.7
+276 silly decomposeActions install eth-lib@0.2.7
+277 silly decomposeActions postinstall eth-lib@0.2.7
+278 silly decomposeActions finalize eth-lib@0.2.7
+279 silly decomposeActions fetch uuid@2.0.1
+280 silly decomposeActions extract uuid@2.0.1
+281 silly decomposeActions test uuid@2.0.1
+282 silly decomposeActions preinstall uuid@2.0.1
+283 silly decomposeActions build uuid@2.0.1
+284 silly decomposeActions install uuid@2.0.1
+285 silly decomposeActions postinstall uuid@2.0.1
+286 silly decomposeActions finalize uuid@2.0.1
+287 silly decomposeActions fetch web3-eth-accounts@1.0.0-beta.34
+288 silly decomposeActions extract web3-eth-accounts@1.0.0-beta.34
+289 silly decomposeActions test web3-eth-accounts@1.0.0-beta.34
+290 silly decomposeActions preinstall web3-eth-accounts@1.0.0-beta.34
+291 silly decomposeActions build web3-eth-accounts@1.0.0-beta.34
+292 silly decomposeActions install web3-eth-accounts@1.0.0-beta.34
+293 silly decomposeActions postinstall web3-eth-accounts@1.0.0-beta.34
+294 silly decomposeActions finalize web3-eth-accounts@1.0.0-beta.34
+295 silly decomposeActions fetch web3-eth@1.0.0-beta.34
+296 silly decomposeActions extract web3-eth@1.0.0-beta.34
+297 silly decomposeActions test web3-eth@1.0.0-beta.34
+298 silly decomposeActions preinstall web3-eth@1.0.0-beta.34
+299 silly decomposeActions build web3-eth@1.0.0-beta.34
+300 silly decomposeActions install web3-eth@1.0.0-beta.34
+301 silly decomposeActions postinstall web3-eth@1.0.0-beta.34
+302 silly decomposeActions finalize web3-eth@1.0.0-beta.34
+303 silly runTopLevelLifecycles Starting
+304 silly executeActions Starting
+305 silly install executeActions
+306 silly doSerial global-install 0
+307 silly doParallel fetch 6
+308 verbose correctMkdir C:\Users\goe eun park\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+309 verbose lock using C:\Users\goe eun park\AppData\Roaming\npm-cache\_locks\staging-5b56e9707d564be1.lock for C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging
+310 silly doParallel extract 6
+311 silly extract scrypt@6.0.3
+312 silly extract scrypt.js@0.2.0
+313 silly extract eth-lib@0.2.7
+314 silly extract uuid@2.0.1
+315 silly extract web3-eth-accounts@1.0.0-beta.34
+316 silly extract web3-eth@1.0.0-beta.34
+317 verbose unbuild node_modules\.staging\scrypt.js-8f79bc61
+318 verbose unbuild node_modules\.staging\eth-lib-2ba73df1
+319 verbose unbuild node_modules\.staging\uuid-f4eed1a7
+320 verbose unbuild node_modules\.staging\scrypt-4ef48991
+321 verbose unbuild node_modules\.staging\web3-eth-accounts-a7b0772a
+322 verbose unbuild node_modules\.staging\web3-eth-8dbde3e2
+323 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1 is being purged from base C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+324 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1
+325 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7 is being purged from base C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+326 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7
+327 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61 is being purged from base C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+328 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61
+329 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991 is being purged from base C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+330 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991
+331 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2 is being purged from base C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+332 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2
+333 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a is being purged from base C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+334 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a
+335 verbose tar unpack C:\Users\goe eun park\AppData\Roaming\npm-cache\eth-lib\0.2.7\package.tgz
+336 verbose tar unpacking to C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1
+337 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1 is being purged
+338 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1
+339 verbose tar unpack C:\Users\goe eun park\AppData\Roaming\npm-cache\uuid\2.0.1\package.tgz
+340 verbose tar unpacking to C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7
+341 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7 is being purged
+342 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7
+343 verbose tar unpack C:\Users\goe eun park\AppData\Roaming\npm-cache\scrypt.js\0.2.0\package.tgz
+344 verbose tar unpacking to C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61
+345 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61 is being purged
+346 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61
+347 verbose tar unpack C:\Users\goe eun park\AppData\Roaming\npm-cache\scrypt\6.0.3\package.tgz
+348 verbose tar unpacking to C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991
+349 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991 is being purged
+350 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991
+351 verbose tar unpack C:\Users\goe eun park\AppData\Roaming\npm-cache\web3-eth\1.0.0-beta.34\package.tgz
+352 verbose tar unpacking to C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2
+353 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2 is being purged
+354 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2
+355 verbose tar unpack C:\Users\goe eun park\AppData\Roaming\npm-cache\web3-eth-accounts\1.0.0-beta.34\package.tgz
+356 verbose tar unpacking to C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a
+357 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a is being purged
+358 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a
+359 silly gunzTarPerm modes [ '777', '666' ]
+360 silly gunzTarPerm modes [ '777', '666' ]
+361 silly gunzTarPerm modes [ '777', '666' ]
+362 silly gunzTarPerm modes [ '777', '666' ]
+363 silly gunzTarPerm modes [ '777', '666' ]
+364 silly gunzTarPerm modes [ '777', '666' ]
+365 silly gunzTarPerm extractEntry package.json
+366 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+367 silly gunzTarPerm extractEntry package.json
+368 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+369 silly gunzTarPerm extractEntry package.json
+370 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+371 silly gunzTarPerm extractEntry package.json
+372 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+373 silly gunzTarPerm extractEntry package.json
+374 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+375 silly gunzTarPerm extractEntry package.json
+376 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+377 silly gunzTarPerm extractEntry .npmignore
+378 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+379 silly gunzTarPerm extractEntry README.md
+380 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+381 silly gunzTarPerm extractEntry README.md
+382 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+383 silly gunzTarPerm extractEntry package-lock.json
+384 silly gunzTarPerm modified mode [ 'package-lock.json', 420, 438 ]
+385 silly gunzTarPerm extractEntry .npmignore
+386 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+387 silly gunzTarPerm extractEntry README.md
+388 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+389 silly gunzTarPerm extractEntry .npmignore
+390 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+391 silly gunzTarPerm extractEntry README.md
+392 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+393 silly gunzTarPerm extractEntry README.md
+394 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+395 silly gunzTarPerm extractEntry package-lock.json
+396 silly gunzTarPerm modified mode [ 'package-lock.json', 420, 438 ]
+397 silly gunzTarPerm extractEntry .npmignore
+398 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+399 silly gunzTarPerm extractEntry README.md
+400 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+401 silly gunzTarPerm extractEntry lib/abi.js
+402 silly gunzTarPerm modified mode [ 'lib/abi.js', 420, 438 ]
+403 silly gunzTarPerm extractEntry lib/desubits.js
+404 silly gunzTarPerm modified mode [ 'lib/desubits.js', 420, 438 ]
+405 silly gunzTarPerm extractEntry LICENSE
+406 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+407 silly gunzTarPerm extractEntry js.js
+408 silly gunzTarPerm modified mode [ 'js.js', 420, 438 ]
+409 silly gunzTarPerm extractEntry src/getNetworkType.js
+410 silly gunzTarPerm modified mode [ 'src/getNetworkType.js', 420, 438 ]
+411 silly gunzTarPerm extractEntry src/index.js
+412 silly gunzTarPerm modified mode [ 'src/index.js', 420, 438 ]
+413 silly gunzTarPerm extractEntry src/index.js
+414 silly gunzTarPerm modified mode [ 'src/index.js', 420, 438 ]
+415 silly gunzTarPerm extractEntry index.js
+416 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+417 silly gunzTarPerm extractEntry uuid.js
+418 silly gunzTarPerm modified mode [ 'uuid.js', 420, 438 ]
+419 silly gunzTarPerm extractEntry rng-browser.js
+420 silly gunzTarPerm modified mode [ 'rng-browser.js', 420, 438 ]
+421 silly gunzTarPerm extractEntry node-scrypt-preinstall.js
+422 silly gunzTarPerm modified mode [ 'node-scrypt-preinstall.js', 420, 438 ]
+423 silly gunzTarPerm extractEntry changelog.md
+424 silly gunzTarPerm modified mode [ 'changelog.md', 420, 438 ]
+425 silly gunzTarPerm extractEntry .travis.yml
+426 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+427 silly gunzTarPerm extractEntry lib/fn.js
+428 silly gunzTarPerm modified mode [ 'lib/fn.js', 420, 438 ]
+429 silly gunzTarPerm extractEntry lib/hash.js
+430 silly gunzTarPerm modified mode [ 'lib/hash.js', 420, 438 ]
+431 silly gunzTarPerm extractEntry node.js
+432 silly gunzTarPerm modified mode [ 'node.js', 420, 438 ]
+433 silly gunzTarPerm extractEntry rng.js
+434 silly gunzTarPerm modified mode [ 'rng.js', 420, 438 ]
+435 silly gunzTarPerm extractEntry binding.gyp
+436 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+437 silly gunzTarPerm extractEntry lib/bytes.js
+438 silly gunzTarPerm modified mode [ 'lib/bytes.js', 420, 438 ]
+439 silly gunzTarPerm extractEntry .travis.yml
+440 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+441 silly gunzTarPerm extractEntry test/test.js
+442 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+443 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/configure
+444 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/configure', 493, 511 ]
+445 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/.deps/scrypt-main.Po
+446 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/.deps/scrypt-main.Po', 420, 438 ]
+447 silly gunzTarPerm extractEntry lib/map.js
+448 silly gunzTarPerm modified mode [ 'lib/map.js', 420, 438 ]
+449 silly gunzTarPerm extractEntry lib/nat.js
+450 silly gunzTarPerm modified mode [ 'lib/nat.js', 420, 438 ]
+451 silly gunzTarPerm extractEntry test/mocha.opts
+452 silly gunzTarPerm modified mode [ 'test/mocha.opts', 420, 438 ]
+453 silly gunzTarPerm extractEntry LICENSE.md
+454 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+455 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/Makefile.in
+456 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/Makefile.in', 420, 438 ]
+457 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/autocrap/Makefile.am
+458 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/autocrap/Makefile.am', 420, 438 ]
+459 silly gunzTarPerm extractEntry lib/passphrase.js
+460 silly gunzTarPerm modified mode [ 'lib/passphrase.js', 420, 438 ]
+461 silly gunzTarPerm extractEntry lib/provider.js
+462 silly gunzTarPerm modified mode [ 'lib/provider.js', 420, 438 ]
+463 silly gunzTarPerm extractEntry benchmark/package.json
+464 silly gunzTarPerm modified mode [ 'benchmark/package.json', 420, 438 ]
+465 silly gunzTarPerm extractEntry benchmark/README.md
+466 silly gunzTarPerm modified mode [ 'benchmark/README.md', 420, 438 ]
+467 silly gunzTarPerm extractEntry lib/rlp.js
+468 silly gunzTarPerm modified mode [ 'lib/rlp.js', 420, 438 ]
+469 silly gunzTarPerm extractEntry lib/array.js
+470 silly gunzTarPerm modified mode [ 'lib/array.js', 420, 438 ]
+471 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/autocrap/configure.ac
+472 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/autocrap/configure.ac', 420, 438 ]
+473 silly gunzTarPerm extractEntry benchmark/benchmark.js
+474 silly gunzTarPerm modified mode [ 'benchmark/benchmark.js', 420, 438 ]
+475 silly gunzTarPerm extractEntry benchmark/bench.gnu
+476 silly gunzTarPerm modified mode [ 'benchmark/bench.gnu', 420, 438 ]
+477 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2\node_modules is being purged
+478 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2\node_modules
+479 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a\node_modules is being purged
+480 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a\node_modules
+481 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61\node_modules is being purged
+482 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61\node_modules
+483 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.aux/compile
+484 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.aux/compile', 493, 511 ]
+485 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.aux/depcomp
+486 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.aux/depcomp', 493, 511 ]
+487 silly gunzTarPerm extractEntry benchmark/bench.sh
+488 silly gunzTarPerm modified mode [ 'benchmark/bench.sh', 493, 511 ]
+489 silly gunzTarPerm extractEntry benchmark/benchmark-native.c
+490 silly gunzTarPerm modified mode [ 'benchmark/benchmark-native.c', 420, 438 ]
+491 silly gunzTarPerm extractEntry lib/rpc.js
+492 silly gunzTarPerm modified mode [ 'lib/rpc.js', 420, 438 ]
+493 silly gunzTarPerm extractEntry lib/api.js
+494 silly gunzTarPerm modified mode [ 'lib/api.js', 420, 438 ]
+495 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.aux/install-sh
+496 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.aux/install-sh', 493, 511 ]
+497 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.aux/missing
+498 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.aux/missing', 493, 511 ]
+499 silly gunzTarPerm extractEntry misc/compare.js
+500 silly gunzTarPerm modified mode [ 'misc/compare.js', 420, 438 ]
+501 silly gunzTarPerm extractEntry misc/perf.js
+502 silly gunzTarPerm modified mode [ 'misc/perf.js', 420, 438 ]
+503 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.h
+504 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.h', 420, 438 ]
+505 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.h.in
+506 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.h.in', 420, 438 ]
+507 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.log
+508 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.log', 420, 438 ]
+509 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/config.status
+510 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/config.status', 493, 511 ]
+511 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/FORMAT
+512 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/FORMAT', 420, 438 ]
+513 silly gunzTarPerm extractEntry lib/transaction.js
+514 silly gunzTarPerm modified mode [ 'lib/transaction.js', 420, 438 ]
+515 silly gunzTarPerm extractEntry lib/account.js
+516 silly gunzTarPerm modified mode [ 'lib/account.js', 420, 438 ]
+517 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/hash.c
+518 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/hash.c', 420, 438 ]
+519 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/hash.h
+520 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/hash.h', 420, 438 ]
+521 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/keyderivation.c
+522 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/keyderivation.c', 420, 438 ]
+523 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/keyderivation.h
+524 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/keyderivation.h', 420, 438 ]
+525 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/README
+526 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/README', 420, 438 ]
+527 silly gunzTarPerm extractEntry lib/types.js
+528 silly gunzTarPerm modified mode [ 'lib/types.js', 420, 438 ]
+529 silly gunzTarPerm extractEntry lib/index.js
+530 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+531 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/.deps/libscrypt_sse2_a-crypto_scrypt_smix_sse2.Po
+532 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/.deps/libscrypt_sse2_a-crypto_scrypt_smix_sse2.Po',
+532 silly gunzTarPerm   420,
+532 silly gunzTarPerm   438 ]
+533 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/.deps/scrypt-crypto_scrypt.Po
+534 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/.deps/scrypt-crypto_scrypt.Po',
+534 silly gunzTarPerm   420,
+534 silly gunzTarPerm   438 ]
+535 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/.deps/scrypt-crypto_scrypt_smix.Po
+536 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/.deps/scrypt-crypto_scrypt_smix.Po',
+536 silly gunzTarPerm   420,
+536 silly gunzTarPerm   438 ]
+537 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt-ref.c
+538 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt-ref.c',
+538 silly gunzTarPerm   420,
+538 silly gunzTarPerm   438 ]
+539 silly gunzTarPerm extractEntry src/abi.js
+540 silly gunzTarPerm modified mode [ 'src/abi.js', 420, 438 ]
+541 silly gunzTarPerm extractEntry src/bytes.js
+542 silly gunzTarPerm modified mode [ 'src/bytes.js', 420, 438 ]
+543 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt.c
+544 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt.c', 420, 438 ]
+545 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt.h
+546 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt.h', 420, 438 ]
+547 silly gunzTarPerm extractEntry src/desubits.js
+548 silly gunzTarPerm modified mode [ 'src/desubits.js', 420, 438 ]
+549 silly gunzTarPerm extractEntry src/fn.js
+550 silly gunzTarPerm modified mode [ 'src/fn.js', 420, 438 ]
+551 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix.c
+552 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix.c',
+552 silly gunzTarPerm   420,
+552 silly gunzTarPerm   438 ]
+553 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix.h
+554 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix.h',
+554 silly gunzTarPerm   420,
+554 silly gunzTarPerm   438 ]
+555 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix_sse2.c
+556 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix_sse2.c',
+556 silly gunzTarPerm   420,
+556 silly gunzTarPerm   438 ]
+557 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix_sse2.h
+558 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/crypto/crypto_scrypt_smix_sse2.h',
+558 silly gunzTarPerm   420,
+558 silly gunzTarPerm   438 ]
+559 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/scryptenc/.deps/scrypt-scryptenc.Po
+560 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/scryptenc/.deps/scrypt-scryptenc.Po',
+560 silly gunzTarPerm   420,
+560 silly gunzTarPerm   438 ]
+561 silly gunzTarPerm extractEntry src/hash.js
+562 silly gunzTarPerm modified mode [ 'src/hash.js', 420, 438 ]
+563 silly gunzTarPerm extractEntry src/array.js
+564 silly gunzTarPerm modified mode [ 'src/array.js', 420, 438 ]
+565 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/scryptenc/.deps/scrypt-scryptenc_cpuperf.Po
+566 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/scryptenc/.deps/scrypt-scryptenc_cpuperf.Po',
+566 silly gunzTarPerm   420,
+566 silly gunzTarPerm   438 ]
+567 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc.c
+568 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc.c', 420, 438 ]
+569 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc.h
+570 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc.h', 420, 438 ]
+571 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc_cpuperf.c
+572 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc_cpuperf.c',
+572 silly gunzTarPerm   420,
+572 silly gunzTarPerm   438 ]
+573 silly gunzTarPerm extractEntry src/map.js
+574 silly gunzTarPerm modified mode [ 'src/map.js', 420, 438 ]
+575 silly gunzTarPerm extractEntry src/nat.js
+576 silly gunzTarPerm modified mode [ 'src/nat.js', 420, 438 ]
+577 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc_cpuperf.h
+578 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/scryptenc/scryptenc_cpuperf.h',
+578 silly gunzTarPerm   420,
+578 silly gunzTarPerm   438 ]
+579 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/util/.deps/scrypt-memlimit.Po
+580 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/util/.deps/scrypt-memlimit.Po',
+580 silly gunzTarPerm   420,
+580 silly gunzTarPerm   438 ]
+581 silly gunzTarPerm extractEntry src/passphrase.js
+582 silly gunzTarPerm modified mode [ 'src/passphrase.js', 420, 438 ]
+583 silly gunzTarPerm extractEntry src/rlp.js
+584 silly gunzTarPerm modified mode [ 'src/rlp.js', 420, 438 ]
+585 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/util/build/config.gypi
+586 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/util/build/config.gypi', 420, 438 ]
+587 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/util/memlimit.c
+588 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/util/memlimit.c', 420, 438 ]
+589 silly gunzTarPerm extractEntry src/rpc.js
+590 silly gunzTarPerm modified mode [ 'src/rpc.js', 420, 438 ]
+591 silly gunzTarPerm extractEntry src/account.js
+592 silly gunzTarPerm modified mode [ 'src/account.js', 420, 438 ]
+593 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/lib/util/memlimit.h
+594 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/lib/util/memlimit.h', 420, 438 ]
+595 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/COPYRIGHT
+596 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/COPYRIGHT', 420, 438 ]
+597 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/alg/.deps/scrypt-sha256.Po
+598 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/alg/.deps/scrypt-sha256.Po',
+598 silly gunzTarPerm   420,
+598 silly gunzTarPerm   438 ]
+599 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/alg/sha256.c
+600 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/alg/sha256.c', 420, 438 ]
+601 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7\node_modules is being purged
+602 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7\node_modules
+603 silly gunzTarPerm extractEntry src/transaction.js
+604 silly gunzTarPerm modified mode [ 'src/transaction.js', 420, 438 ]
+605 silly gunzTarPerm extractEntry src/index.js
+606 silly gunzTarPerm modified mode [ 'src/index.js', 420, 438 ]
+607 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/alg/sha256.h
+608 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/alg/sha256.h', 420, 438 ]
+609 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/.deps/scrypt-cpusupport_x86_aesni.Po
+610 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/.deps/scrypt-cpusupport_x86_aesni.Po',
+610 silly gunzTarPerm   420,
+610 silly gunzTarPerm   438 ]
+611 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/.deps/scrypt-cpusupport_x86_sse2.Po
+612 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/.deps/scrypt-cpusupport_x86_sse2.Po',
+612 silly gunzTarPerm   420,
+612 silly gunzTarPerm   438 ]
+613 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport-X86-AESNI.c
+614 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport-X86-AESNI.c',
+614 silly gunzTarPerm   420,
+614 silly gunzTarPerm   438 ]
+615 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport-X86-CPUID.c
+616 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport-X86-CPUID.c',
+616 silly gunzTarPerm   420,
+616 silly gunzTarPerm   438 ]
+617 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport-X86-SSE2.c
+618 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport-X86-SSE2.c',
+618 silly gunzTarPerm   420,
+618 silly gunzTarPerm   438 ]
+619 silly gunzTarPerm extractEntry test/test.js
+620 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+621 silly gunzTarPerm extractEntry test/lib/benchmark.js
+622 silly gunzTarPerm modified mode [ 'test/lib/benchmark.js', 420, 438 ]
+623 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport.sh
+624 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/Build/cpusupport.sh',
+624 silly gunzTarPerm   493,
+624 silly gunzTarPerm   511 ]
+625 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/cpusupport.h
+626 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/cpusupport.h',
+626 silly gunzTarPerm   420,
+626 silly gunzTarPerm   438 ]
+627 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/cpusupport_x86_aesni.c
+628 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/cpusupport_x86_aesni.c',
+628 silly gunzTarPerm   420,
+628 silly gunzTarPerm   438 ]
+629 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/cpusupport/cpusupport_x86_sse2.c
+630 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/cpusupport/cpusupport_x86_sse2.c',
+630 silly gunzTarPerm   420,
+630 silly gunzTarPerm   438 ]
+631 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/libcperciva_aesni_a-crypto_aes_aesni.Po
+632 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/libcperciva_aesni_a-crypto_aes_aesni.Po',
+632 silly gunzTarPerm   420,
+632 silly gunzTarPerm   438 ]
+633 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/scrypt-crypto_aes.Po
+634 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/scrypt-crypto_aes.Po',
+634 silly gunzTarPerm   420,
+634 silly gunzTarPerm   438 ]
+635 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/scrypt-crypto_aesctr.Po
+636 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/scrypt-crypto_aesctr.Po',
+636 silly gunzTarPerm   420,
+636 silly gunzTarPerm   438 ]
+637 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/scrypt-crypto_entropy.Po
+638 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/.deps/scrypt-crypto_entropy.Po',
+638 silly gunzTarPerm   420,
+638 silly gunzTarPerm   438 ]
+639 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes.c
+640 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes.c',
+640 silly gunzTarPerm   420,
+640 silly gunzTarPerm   438 ]
+641 silly gunzTarPerm extractEntry test/lib/randomData.js
+642 silly gunzTarPerm modified mode [ 'test/lib/randomData.js', 420, 438 ]
+643 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes.h
+644 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes.h',
+644 silly gunzTarPerm   420,
+644 silly gunzTarPerm   438 ]
+645 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes_aesni.c
+646 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes_aesni.c',
+646 silly gunzTarPerm   420,
+646 silly gunzTarPerm   438 ]
+647 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes_aesni.h
+648 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aes_aesni.h',
+648 silly gunzTarPerm   420,
+648 silly gunzTarPerm   438 ]
+649 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aesctr.c
+650 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aesctr.c',
+650 silly gunzTarPerm   420,
+650 silly gunzTarPerm   438 ]
+651 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aesctr.h
+652 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_aesctr.h',
+652 silly gunzTarPerm   420,
+652 silly gunzTarPerm   438 ]
+653 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_entropy.c
+654 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_entropy.c',
+654 silly gunzTarPerm   420,
+654 silly gunzTarPerm   438 ]
+655 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_entropy.h
+656 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/crypto/crypto_entropy.h',
+656 silly gunzTarPerm   420,
+656 silly gunzTarPerm   438 ]
+657 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-entropy.Po
+658 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-entropy.Po',
+658 silly gunzTarPerm   420,
+658 silly gunzTarPerm   438 ]
+659 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-insecure_memzero.Po
+660 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-insecure_memzero.Po',
+660 silly gunzTarPerm   420,
+660 silly gunzTarPerm   438 ]
+661 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-readpass.Po
+662 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-readpass.Po',
+662 silly gunzTarPerm   420,
+662 silly gunzTarPerm   438 ]
+663 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-warnp.Po
+664 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/.deps/scrypt-warnp.Po',
+664 silly gunzTarPerm   420,
+664 silly gunzTarPerm   438 ]
+665 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/entropy.c
+666 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/entropy.c', 420, 438 ]
+667 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/entropy.h
+668 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/entropy.h', 420, 438 ]
+669 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/insecure_memzero.c
+670 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/insecure_memzero.c',
+670 silly gunzTarPerm   420,
+670 silly gunzTarPerm   438 ]
+671 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/insecure_memzero.h
+672 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/insecure_memzero.h',
+672 silly gunzTarPerm   420,
+672 silly gunzTarPerm   438 ]
+673 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/readpass.c
+674 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/readpass.c', 420, 438 ]
+675 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/readpass.h
+676 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/readpass.h', 420, 438 ]
+677 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/sysendian.h
+678 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/sysendian.h', 420, 438 ]
+679 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/warnp.c
+680 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/warnp.c', 420, 438 ]
+681 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/libcperciva/util/warnp.h
+682 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/libcperciva/util/warnp.h', 420, 438 ]
+683 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/scrypt_platform.h
+684 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/scrypt_platform.h', 420, 438 ]
+685 silly gunzTarPerm extractEntry scrypt/scrypt-1.2.0/stamp-h1
+686 silly gunzTarPerm modified mode [ 'scrypt/scrypt-1.2.0/stamp-h1', 420, 438 ]
+687 silly gunzTarPerm extractEntry scrypt/win/gettimeofday.c
+688 silly gunzTarPerm modified mode [ 'scrypt/win/gettimeofday.c', 420, 438 ]
+689 silly gunzTarPerm extractEntry scrypt/win/include/gettimeofday.h
+690 silly gunzTarPerm modified mode [ 'scrypt/win/include/gettimeofday.h', 420, 438 ]
+691 silly gunzTarPerm extractEntry scrypt/win/include/inttypes.h
+692 silly gunzTarPerm modified mode [ 'scrypt/win/include/inttypes.h', 420, 438 ]
+693 silly gunzTarPerm extractEntry scrypt/win/include/stdint.h
+694 silly gunzTarPerm modified mode [ 'scrypt/win/include/stdint.h', 420, 438 ]
+695 silly gunzTarPerm extractEntry scrypt/win/include/sys/mman.h
+696 silly gunzTarPerm modified mode [ 'scrypt/win/include/sys/mman.h', 420, 438 ]
+697 silly gunzTarPerm extractEntry scrypt/win/include/unistd.h
+698 silly gunzTarPerm modified mode [ 'scrypt/win/include/unistd.h', 420, 438 ]
+699 silly gunzTarPerm extractEntry scrypt/win/memlimit.c
+700 silly gunzTarPerm modified mode [ 'scrypt/win/memlimit.c', 420, 438 ]
+701 silly gunzTarPerm extractEntry scrypt/win/mman.c
+702 silly gunzTarPerm modified mode [ 'scrypt/win/mman.c', 420, 438 ]
+703 silly gunzTarPerm extractEntry scrypt_node.cc
+704 silly gunzTarPerm modified mode [ 'scrypt_node.cc', 420, 438 ]
+705 silly gunzTarPerm extractEntry src/node-boilerplate/inc/scrypt_async.h
+706 silly gunzTarPerm modified mode [ 'src/node-boilerplate/inc/scrypt_async.h', 420, 438 ]
+707 silly gunzTarPerm extractEntry src/node-boilerplate/inc/scrypt_common.h
+708 silly gunzTarPerm modified mode [ 'src/node-boilerplate/inc/scrypt_common.h', 420, 438 ]
+709 silly gunzTarPerm extractEntry src/node-boilerplate/inc/scrypt_hash_async.h
+710 silly gunzTarPerm modified mode [ 'src/node-boilerplate/inc/scrypt_hash_async.h', 420, 438 ]
+711 silly gunzTarPerm extractEntry src/node-boilerplate/inc/scrypt_kdf-verify_async.h
+712 silly gunzTarPerm modified mode [ 'src/node-boilerplate/inc/scrypt_kdf-verify_async.h',
+712 silly gunzTarPerm   420,
+712 silly gunzTarPerm   438 ]
+713 silly gunzTarPerm extractEntry src/node-boilerplate/inc/scrypt_kdf_async.h
+714 silly gunzTarPerm modified mode [ 'src/node-boilerplate/inc/scrypt_kdf_async.h', 420, 438 ]
+715 silly gunzTarPerm extractEntry src/node-boilerplate/inc/scrypt_params_async.h
+716 silly gunzTarPerm modified mode [ 'src/node-boilerplate/inc/scrypt_params_async.h', 420, 438 ]
+717 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_common.cc
+718 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_common.cc', 420, 438 ]
+719 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_hash_async.cc
+720 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_hash_async.cc', 420, 438 ]
+721 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_hash_sync.cc
+722 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_hash_sync.cc', 420, 438 ]
+723 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_kdf-verify_async.cc
+724 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_kdf-verify_async.cc', 420, 438 ]
+725 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_kdf-verify_sync.cc
+726 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_kdf-verify_sync.cc', 420, 438 ]
+727 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_kdf_async.cc
+728 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_kdf_async.cc', 420, 438 ]
+729 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_kdf_sync.cc
+730 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_kdf_sync.cc', 420, 438 ]
+731 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_params_async.cc
+732 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_params_async.cc', 420, 438 ]
+733 silly gunzTarPerm extractEntry src/node-boilerplate/scrypt_params_sync.cc
+734 silly gunzTarPerm modified mode [ 'src/node-boilerplate/scrypt_params_sync.cc', 420, 438 ]
+735 silly gunzTarPerm extractEntry src/scryptwrapper/hash.c
+736 silly gunzTarPerm modified mode [ 'src/scryptwrapper/hash.c', 420, 438 ]
+737 silly gunzTarPerm extractEntry src/scryptwrapper/inc/hash.h
+738 silly gunzTarPerm modified mode [ 'src/scryptwrapper/inc/hash.h', 420, 438 ]
+739 silly gunzTarPerm extractEntry src/scryptwrapper/inc/keyderivation.h
+740 silly gunzTarPerm modified mode [ 'src/scryptwrapper/inc/keyderivation.h', 420, 438 ]
+741 silly gunzTarPerm extractEntry src/scryptwrapper/inc/pickparams.h
+742 silly gunzTarPerm modified mode [ 'src/scryptwrapper/inc/pickparams.h', 420, 438 ]
+743 silly gunzTarPerm extractEntry src/scryptwrapper/keyderivation.c
+744 silly gunzTarPerm modified mode [ 'src/scryptwrapper/keyderivation.c', 420, 438 ]
+745 silly gunzTarPerm extractEntry src/scryptwrapper/pickparams.c
+746 silly gunzTarPerm modified mode [ 'src/scryptwrapper/pickparams.c', 420, 438 ]
+747 silly gunzTarPerm extractEntry src/util/memlimit.c
+748 silly gunzTarPerm modified mode [ 'src/util/memlimit.c', 420, 438 ]
+749 silly gunzTarPerm extractEntry src/util/memlimit.h
+750 silly gunzTarPerm modified mode [ 'src/util/memlimit.h', 420, 438 ]
+751 silly gunzTarPerm extractEntry tests/scrypt-tests.js
+752 silly gunzTarPerm modified mode [ 'tests/scrypt-tests.js', 420, 438 ]
+753 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1\node_modules is being purged
+754 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1\node_modules
+755 silly gentlyRm C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991\node_modules is being purged
+756 verbose gentlyRm don't care about contents; nuking C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991\node_modules
+757 silly doParallel preinstall 6
+758 silly preinstall scrypt@6.0.3 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991
+759 info lifecycle scrypt@6.0.3~preinstall: scrypt@6.0.3
+760 silly preinstall scrypt.js@0.2.0 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt.js-8f79bc61
+761 info lifecycle scrypt.js@0.2.0~preinstall: scrypt.js@0.2.0
+762 silly preinstall eth-lib@0.2.7 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\eth-lib-2ba73df1
+763 info lifecycle eth-lib@0.2.7~preinstall: eth-lib@0.2.7
+764 silly preinstall uuid@2.0.1 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\uuid-f4eed1a7
+765 info lifecycle uuid@2.0.1~preinstall: uuid@2.0.1
+766 silly preinstall web3-eth-accounts@1.0.0-beta.34 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-accounts-a7b0772a
+767 info lifecycle web3-eth-accounts@1.0.0-beta.34~preinstall: web3-eth-accounts@1.0.0-beta.34
+768 silly preinstall web3-eth@1.0.0-beta.34 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\web3-eth-8dbde3e2
+769 info lifecycle web3-eth@1.0.0-beta.34~preinstall: web3-eth@1.0.0-beta.34
+770 verbose lifecycle scrypt@6.0.3~preinstall: unsafe-perm in lifecycle true
+771 verbose lifecycle scrypt@6.0.3~preinstall: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991\node_modules\.bin;C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.bin;C:\Users\goe eun park\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\goe eun park\bin;C:\win-builds64\bin;Program Files (x86)\RBTools\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Java\jdk1.8.0_51\bin;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files\nodejs;C:\Program Files (x86)\Brackets\command;C:\vim;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.4\C;C:\Program Files\Git\path;C:\Program Files\PuTTY\ ;C:\MinGW\bin;C:\Users\goe eun park\Anaconda3;C:\Users\goe eun park\Anaconda3\Scripts;C:\Users\goe eun park\Anaconda3\Library\bin;C:\Users\goe eun park\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\goe eun park\AppData\Local\Programs\Python\Python36-32;C:\Program Files (x86)\RBTools\bin;C:\Users\goe eun park\AppData\Roaming\npm;C:\php;C:\VIM;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+772 verbose lifecycle scrypt@6.0.3~preinstall: CWD: C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991
+773 silly lifecycle scrypt@6.0.3~preinstall: Args: [ '/d /s /c', 'node node-scrypt-preinstall.js' ]
+774 silly lifecycle scrypt.js@0.2.0~preinstall: no script for preinstall, continuing
+775 silly lifecycle eth-lib@0.2.7~preinstall: no script for preinstall, continuing
+776 silly lifecycle uuid@2.0.1~preinstall: no script for preinstall, continuing
+777 silly lifecycle web3-eth@1.0.0-beta.34~preinstall: no script for preinstall, continuing
+778 silly lifecycle web3-eth-accounts@1.0.0-beta.34~preinstall: no script for preinstall, continuing
+779 silly lifecycle scrypt@6.0.3~preinstall: Returned: code: 0  signal: null
+780 silly doReverseSerial remove 0
+781 silly doSerial move 0
+782 silly doSerial finalize 6
+783 silly finalize C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\scrypt
+784 silly finalize C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\scrypt.js
+785 silly finalize C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\web3-eth-accounts\node_modules\eth-lib
+786 silly finalize C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\web3-eth-accounts\node_modules\uuid
+787 silly finalize C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\web3-eth-accounts
+788 silly finalize C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\web3-eth
+789 silly doSerial build 6
+790 silly build scrypt@6.0.3
+791 info linkStuff scrypt@6.0.3
+792 silly linkStuff scrypt@6.0.3 has C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules as its parent node_modules
+793 verbose linkBins scrypt@6.0.3
+794 verbose linkMans scrypt@6.0.3
+795 silly build scrypt.js@0.2.0
+796 info linkStuff scrypt.js@0.2.0
+797 silly linkStuff scrypt.js@0.2.0 has C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules as its parent node_modules
+798 verbose linkBins scrypt.js@0.2.0
+799 verbose linkMans scrypt.js@0.2.0
+800 silly build eth-lib@0.2.7
+801 info linkStuff eth-lib@0.2.7
+802 silly linkStuff eth-lib@0.2.7 has C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\web3-eth-accounts\node_modules as its parent node_modules
+803 verbose linkBins eth-lib@0.2.7
+804 verbose linkMans eth-lib@0.2.7
+805 silly build uuid@2.0.1
+806 info linkStuff uuid@2.0.1
+807 silly linkStuff uuid@2.0.1 has C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\web3-eth-accounts\node_modules as its parent node_modules
+808 verbose linkBins uuid@2.0.1
+809 verbose linkMans uuid@2.0.1
+810 silly build web3-eth-accounts@1.0.0-beta.34
+811 info linkStuff web3-eth-accounts@1.0.0-beta.34
+812 silly linkStuff web3-eth-accounts@1.0.0-beta.34 has C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules as its parent node_modules
+813 verbose linkBins web3-eth-accounts@1.0.0-beta.34
+814 verbose linkMans web3-eth-accounts@1.0.0-beta.34
+815 silly build web3-eth@1.0.0-beta.34
+816 info linkStuff web3-eth@1.0.0-beta.34
+817 silly linkStuff web3-eth@1.0.0-beta.34 has C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules as its parent node_modules
+818 verbose linkBins web3-eth@1.0.0-beta.34
+819 verbose linkMans web3-eth@1.0.0-beta.34
+820 silly doSerial global-link 0
+821 silly doParallel update-linked 0
+822 silly doSerial install 6
+823 silly install scrypt@6.0.3 C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging\scrypt-4ef48991
+824 info lifecycle scrypt@6.0.3~install: scrypt@6.0.3
+825 verbose lifecycle scrypt@6.0.3~install: unsafe-perm in lifecycle true
+826 verbose lifecycle scrypt@6.0.3~install: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\scrypt\node_modules\.bin;C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.bin;C:\Users\goe eun park\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\goe eun park\bin;C:\win-builds64\bin;Program Files (x86)\RBTools\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Java\jdk1.8.0_51\bin;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files\nodejs;C:\Program Files (x86)\Brackets\command;C:\vim;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.4\C;C:\Program Files\Git\path;C:\Program Files\PuTTY\ ;C:\MinGW\bin;C:\Users\goe eun park\Anaconda3;C:\Users\goe eun park\Anaconda3\Scripts;C:\Users\goe eun park\Anaconda3\Library\bin;C:\Users\goe eun park\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\goe eun park\AppData\Local\Programs\Python\Python36-32;C:\Program Files (x86)\RBTools\bin;C:\Users\goe eun park\AppData\Roaming\npm;C:\php;C:\VIM;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+827 verbose lifecycle scrypt@6.0.3~install: CWD: C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\scrypt
+828 silly lifecycle scrypt@6.0.3~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+829 silly lifecycle scrypt@6.0.3~install: Returned: code: 1  signal: null
+830 info lifecycle scrypt@6.0.3~install: Failed to exec install script
+831 verbose unlock done using C:\Users\goe eun park\AppData\Roaming\npm-cache\_locks\staging-5b56e9707d564be1.lock for C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum\node_modules\.staging
+832 silly rollbackFailedOptional Starting
+833 silly rollbackFailedOptional Finishing
+834 silly runTopLevelLifecycles Finishing
+835 silly install printInstalled
+836 warn chainskills@1.0.0 No description
+837 verbose If you need help, you may report this error at:
+837 verbose     <https://github.com/npm/npm/issues>
+838 warn chainskills@1.0.0 No repository field.
+839 verbose If you need help, you may report this error at:
+839 verbose     <https://github.com/npm/npm/issues>
+840 verbose stack Error: scrypt@6.0.3 install: `node-gyp rebuild`
+840 verbose stack Exit status 1
+840 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+840 verbose stack     at emitTwo (events.js:106:13)
+840 verbose stack     at EventEmitter.emit (events.js:191:7)
+840 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+840 verbose stack     at emitTwo (events.js:106:13)
+840 verbose stack     at ChildProcess.emit (events.js:191:7)
+840 verbose stack     at maybeClose (internal/child_process.js:877:16)
+840 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+841 verbose pkgid scrypt@6.0.3
+842 verbose cwd C:\Users\goe eun park\Desktop\2018-cap1-29\ethereum
+843 error Windows_NT 6.1.7601
+844 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "web3-eth"
+845 error node v6.10.0
+846 error npm  v3.10.10
+847 error code ELIFECYCLE
+848 error scrypt@6.0.3 install: `node-gyp rebuild`
+848 error Exit status 1
+849 error Failed at the scrypt@6.0.3 install script 'node-gyp rebuild'.
+849 error Make sure you have the latest version of node.js and npm installed.
+849 error If you do, this is most likely a problem with the scrypt package,
+849 error not with npm itself.
+849 error Tell the author that this fails on your system:
+849 error     node-gyp rebuild
+849 error You can get information on how to open an issue for this project with:
+849 error     npm bugs scrypt
+849 error Or if that isn't available, you can get their info via:
+849 error     npm owner ls scrypt
+849 error There is likely additional logging output above.
+850 verbose exit [ 1, true ]

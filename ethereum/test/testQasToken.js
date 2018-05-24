@@ -84,7 +84,7 @@ contract('qasToken', function(accounts) {
 
   it("should upvote", function() {
     return qasToken.deployed().then(function(instance) {
-      return instance.upVote(questionee, {
+      return instance.upVote(questionee, bounty{
         from: master
       });
     }).then(function(receipt) {

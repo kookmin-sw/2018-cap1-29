@@ -113,7 +113,6 @@ contract qasToken is EIP20Interface {
             _description,
             false
         );
-
         LogRegistAnswer(answerCounter, _question_id, msg.sender, _title, false);
     }
 
@@ -124,16 +123,14 @@ contract qasToken is EIP20Interface {
         } else {
             return false;
         }
-
     }
-    function upVote(address _to) public returns (bool success) {
+    function upVote(address _to, uint256 _value) public returns (bool success) {
         if(msg.sender == master){
-            transfer(_to, upvote_amount);
+            transfer(_to, uint256(upvote_amount*_value*0.5));
             return true;
         } else {
             return false;
         }
-
     }
 
     function chooseAnswer(address _to, uint256 _answer_id, uint256 _value) public returns (bool success) {
