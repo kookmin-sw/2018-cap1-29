@@ -1,6 +1,7 @@
 pragma solidity ^0.4.18;
- 
+
 import "./EIP20Interface.sol";
+import "./SafeMath.sol";
 
 contract qasToken is EIP20Interface {
     struct Question {
@@ -41,7 +42,7 @@ contract qasToken is EIP20Interface {
     uint questionCounter;
     uint answerCounter;
 
-    
+
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
   //  uint public initial_level = 1;
@@ -61,14 +62,14 @@ contract qasToken is EIP20Interface {
         name = "HashCoin";                                   // Set the name for display purposes
         decimals = 10;                            // Amount of decimals for display purposes
         symbol = "HCX";
-        master = msg.sender;    
+        master = msg.sender;
                              // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balances[msg.sender] >= _value);
-        balances[msg.sender] -= _value;
-        balances[_to] += _value;
+        balances[msg.sender]= balances[msg.sender].sub(_value);
+        balances[_to] = balances[_to].add(_value);
         Transfer(msg.sender, _to, _value);
         return true;
     }
@@ -76,10 +77,10 @@ contract qasToken is EIP20Interface {
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         uint256 allowance = allowed[_from][msg.sender];
         require(balances[_from] >= _value && allowance >= _value);
-        balances[_to] += _value;
-        balances[_from] -= _value;
+        balances[_to] = balances[_to].add(_value);
+        balances[_from] = balance[_from].sub(_value);
         if (allowance < MAX_UINT256) {
-            allowed[_from][msg.sender] -= _value;
+            allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_value);
         }
         Transfer(_from, _to, _value);
         return true;
@@ -147,7 +148,7 @@ contract qasToken is EIP20Interface {
             return false;
         }
         LogChooseAnswer(question.id, answer.id, answer.author);
-        answer.choosedAnswerCounter++;
+        answer.choosedAnswerCounter = answer.choosedAnswerCounter.add(1);
     }
     function rewardAnswer(uint _answer_id) payable public {
         require(questionCounter > 0);
@@ -168,15 +169,15 @@ contract qasToken is EIP20Interface {
         return true;
     }
     function donateToken(address _from, address _to, uint256 _value) public returns (bool success) {
-        balances[_to] += _value;
-        balances[_from] -= _value;
+        balances[_to] = balances[_to].add(_value);
+        balances[_from] = balances[_from].sub(_value);
         Transfer(_from, _to, _value);
         return true;
     }
     function levelUp(uint256 _answer_id) public returns (bool success){
         Answer storage answer = answers[_answer_id];
         if(answer.choosedAnswerCounter/10>0 && answer.choosedAnswerCounter<100){
-            answer.level = answer.choosedAnswerCounter /10;
+            answer.level = answer.choosedAnswerCounter.div(10);
         }
     }
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
