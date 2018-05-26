@@ -1,9 +1,9 @@
 pragma solidity ^0.4.18;
- 
-import "./EIP20Interface.sol";
-import "./SafeMath.sol";
 
-contract EIP20Interface {
+import "./EIP20Interface.sol";
+//import "./SafeMath.sol";
+
+contract qasToken is EIP20Interface {
     struct Question {
         uint id;
         address author;
@@ -22,10 +22,18 @@ contract EIP20Interface {
         string description;
         bool choose;
     }
+
+    uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (uint => Question) public questions;
     mapping (uint => Answer) public answers;
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
+    /*
+    senario
+    We have [id, address] information.
+    All users have metamask(or we provide wallet frontend).
+    register question, choose answer.
+    */
 
     string public name;                   //fancy name: eg Simon Bucks
     uint8 public decimals;                //How many decimals to show.
@@ -34,13 +42,34 @@ contract EIP20Interface {
     uint questionCounter;
     uint answerCounter;
 
+
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
+  //  uint public initial_level = 1;
+        event LogChooseAnswer(
+        uint indexed _question_id,
+        uint indexed _answer_id,
+        address indexed _answer_author    );
+
+    function qasToken(/*
+        uint256 _initialAmount,
+        string _tokenName,
+        uint8 _decimalUnits,
+        string _tokenSymbol
+    */) public {
+        balances[msg.sender] = MAX_UINT256;               // Give the creator all initial tokens
+        totalSupply = MAX_UINT256;                        // Update total supply
+        name = "HashCoin";                                   // Set the name for display purposes
+        decimals = 10;                            // Amount of decimals for display purposes
+        symbol = "HCX";
+        master = msg.sender;
+                             // Set the symbol for display purposes
+    }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balances[msg.sender] >= _value);
-        balances[msg.sender]= balances[msg.sender].sub(_value);
-        balances[_to] = balances[_to].add(_value);
+        balances[msg.sender]= balances[msg.sender]-_value;
+        balances[_to] = balances[_to]+_value;
         Transfer(msg.sender, _to, _value);
         return true;
     }
@@ -48,10 +77,10 @@ contract EIP20Interface {
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         uint256 allowance = allowed[_from][msg.sender];
         require(balances[_from] >= _value && allowance >= _value);
-        balances[_to] = balances[_to].add(_value);
-        balances[_from] = balance[_from].sub(_value);
+        balances[_to] = balances[_to]+_value;
+        balances[_from] = balances[_from]-_value;
         if (allowance < MAX_UINT256) {
-            allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_value);
+            allowed[_from][msg.sender] = allowed[_from][msg.sender]-_value;
         }
         Transfer(_from, _to, _value);
         return true;
@@ -59,9 +88,8 @@ contract EIP20Interface {
 
     // value = money for the question
     function registQuestion(uint256 _value, string _title, string _description) public returns (bool success) {
+        transfer(master, _value);
         questionCounter++;
-        if(msg.sender == master){
-            transfer(_to, uint256(_value*0.5));
         questions[questionCounter] = Question(
             questionCounter,
             msg.sender,
@@ -99,7 +127,7 @@ contract EIP20Interface {
     }
     function upVote(address _to, uint256 _value) public returns (bool success) {
         if(msg.sender == master){
-            transfer(_to, uint256(upvote_amount*_value*0.5));
+            transfer(_to, upvote_amount);
             return true;
         } else {
             return false;
@@ -120,7 +148,7 @@ contract EIP20Interface {
             return false;
         }
         LogChooseAnswer(question.id, answer.id, answer.author);
-        answer.choosedAnswerCounter = answer.choosedAnswerCounter.add(1);
+        answer.choosedAnswerCounter = answer.choosedAnswerCounter+1;
     }
     function rewardAnswer(uint _answer_id) payable public {
         require(questionCounter > 0);
@@ -131,16 +159,28 @@ contract EIP20Interface {
         Transfer(question.author, answer.author, question.bounty);
         LogRewardAnswer(answer.id, answer.author, answer.choose, question.bounty);
     }
+    function balanceOf(address _owner) public view returns (uint256 balance) {
+        return balances[_owner];
+    }
+
+    function approve(address _spender, uint256 _value) public returns (bool success) {
+        allowed[msg.sender][_spender] = _value;
+        Approval(msg.sender, _spender, _value);
+        return true;
+    }
     function donateToken(address _from, address _to, uint256 _value) public returns (bool success) {
-        balances[_to] = balances[_to].add(_value);
-        balances[_from] = balances[_from].sub(_value);
+        balances[_to] = balances[_to]+_value;
+        balances[_from] = balances[_from]-_value;
         Transfer(_from, _to, _value);
         return true;
     }
     function levelUp(uint256 _answer_id) public returns (bool success){
         Answer storage answer = answers[_answer_id];
         if(answer.choosedAnswerCounter/10>0 && answer.choosedAnswerCounter<100){
-            answer.level = answer.choosedAnswerCounter.div(10);
+            answer.level = answer.choosedAnswerCounter/10;
         }
+    }
+    function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+        return allowed[_owner][_spender];
     }
 }
