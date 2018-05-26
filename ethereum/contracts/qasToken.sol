@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-
+ 
 import "./EIP20Interface.sol";
 import "./SafeMath.sol";
 
@@ -88,7 +88,6 @@ contract qasToken is EIP20Interface {
 
     // value = money for the question
     function registQuestion(uint256 _value, string _title, string _description) public returns (bool success) {
-        transfer(master, _value);
         questionCounter++;
         questions[questionCounter] = Question(
             questionCounter,

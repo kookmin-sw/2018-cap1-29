@@ -39,13 +39,15 @@ contract('qasToken', function(accounts) {
         from: questioner
       });
     }).then(function(receipt) {
-      assert.equal(receipt.logs.length, 2, "two events should have been triggered");
-      assert.equal(receipt.logs[0].event, "Transfer", "event should be Transfer");
-      assert.equal(receipt.logs[1].event, "LogRegistQuestion", "event should be LogRegistQuestion");
-      assert.equal(receipt.logs[0].args._from, questioner, "to account must be " + questioner);
-      assert.equal(receipt.logs[0].args._to, master, "from account must be " + master);
-      assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
-      assert.equal(receipt.logs[1].args._title, questionTitle, "event question title must be " + questionTitle);
+      assert.equal(receipt.logs.length, 1, "one event should have been triggered");
+//      assert.equal(receipt.logs[0].event, "Transfer", "event should be Transfer");
+      assert.equal(receipt.logs[0].event, "LogRegistQuestion", "event should be LogRegistQuestion");
+//      assert.equal(receipt.logs[0].args._from, questioner, "to account must be " + questioner);
+//      assert.equal(receipt.logs[0].args._to, master, "from account must be " + master);
+//      assert.equal(receipt.logs[0].args._value.toNumber(), bounty, "value must be " + bounty);
+      assert.equal(receipt.logs[0].args._id.toNumber(), 1, "id must be 1");
+      assert.equal(receipt.logs[0].args._author, questioner, "event author must be " + questioner);
+      assert.equal(receipt.logs[0].args._title, questionTitle, "event question title must be " + questionTitle);
     });
   });
   it("should regist answer", function() {
