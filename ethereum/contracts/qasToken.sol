@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 import "./EIP20Interface.sol";
 import "./SafeMath.sol";
 
-contract qasToken is EIP20Interface {
+contract EIP20Interface {
     struct Question {
         uint id;
         address author;
@@ -22,18 +22,10 @@ contract qasToken is EIP20Interface {
         string description;
         bool choose;
     }
-
-    uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (uint => Question) public questions;
     mapping (uint => Answer) public answers;
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
-    /*
-    senario
-    We have [id, address] information.
-    All users have metamask(or we provide wallet frontend).
-    register question, choose answer.
-    */
 
     string public name;                   //fancy name: eg Simon Bucks
     uint8 public decimals;                //How many decimals to show.
@@ -42,29 +34,8 @@ contract qasToken is EIP20Interface {
     uint questionCounter;
     uint answerCounter;
 
-
     uint public initial_amount =1000;
     uint public upvote_amount = 100;
-  //  uint public initial_level = 1;
-        event LogChooseAnswer(
-        uint indexed _question_id,
-        uint indexed _answer_id,
-        address indexed _answer_author    );
-
-    function qasToken(/*
-        uint256 _initialAmount,
-        string _tokenName,
-        uint8 _decimalUnits,
-        string _tokenSymbol
-    */) public {
-        balances[msg.sender] = MAX_UINT256;               // Give the creator all initial tokens
-        totalSupply = MAX_UINT256;                        // Update total supply
-        name = "HashCoin";                                   // Set the name for display purposes
-        decimals = 10;                            // Amount of decimals for display purposes
-        symbol = "HCX";
-        master = msg.sender;
-                             // Set the symbol for display purposes
-    }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balances[msg.sender] >= _value);
@@ -89,6 +60,8 @@ contract qasToken is EIP20Interface {
     // value = money for the question
     function registQuestion(uint256 _value, string _title, string _description) public returns (bool success) {
         questionCounter++;
+        if(msg.sender == master){
+            transfer(_to, uint256(_value*0.5));
         questions[questionCounter] = Question(
             questionCounter,
             msg.sender,
@@ -158,15 +131,6 @@ contract qasToken is EIP20Interface {
         Transfer(question.author, answer.author, question.bounty);
         LogRewardAnswer(answer.id, answer.author, answer.choose, question.bounty);
     }
-    function balanceOf(address _owner) public view returns (uint256 balance) {
-        return balances[_owner];
-    }
-
-    function approve(address _spender, uint256 _value) public returns (bool success) {
-        allowed[msg.sender][_spender] = _value;
-        Approval(msg.sender, _spender, _value);
-        return true;
-    }
     function donateToken(address _from, address _to, uint256 _value) public returns (bool success) {
         balances[_to] = balances[_to].add(_value);
         balances[_from] = balances[_from].sub(_value);
@@ -178,8 +142,5 @@ contract qasToken is EIP20Interface {
         if(answer.choosedAnswerCounter/10>0 && answer.choosedAnswerCounter<100){
             answer.level = answer.choosedAnswerCounter.div(10);
         }
-    }
-    function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
-        return allowed[_owner][_spender];
     }
 }
