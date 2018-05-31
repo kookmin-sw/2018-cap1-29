@@ -44,4 +44,4 @@
 
 ## V.  결과 영상
 
-[![Video Label](http://img.youtube.com/vi/xW9pypuma0M/0.jpg)](https://youtu.be/xW9pypuma0M?t=0s)
+[![Video Label](http://img.youtube.com/vi/ufp8mickueA/0.jpg)](https://youtu.be/ufp8mickueA?t=0s)
