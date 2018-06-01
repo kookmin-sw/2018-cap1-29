@@ -51,17 +51,17 @@ contract qasToken is EIP20Interface {
         uint indexed _answer_id,
         address indexed _answer_author    );
 
-    function qasToken(/*
+    function qasToken(
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
         string _tokenSymbol
-    */) public {
-        balances[msg.sender] = MAX_UINT256;               // Give the creator all initial tokens
-        totalSupply = MAX_UINT256;                        // Update total supply
-        name = "HashCoin";                                   // Set the name for display purposes
-        decimals = 10;                            // Amount of decimals for display purposes
-        symbol = "HCX";
+    ) public {
+        balances[msg.sender] = 1000000;  // Creator initial tokens
+        totalSupply = _initialAmount; // Update total supply
+        name = _tokenName;  // Set the name for display purposes
+        decimals = _decimalUnits;                            // Amount of decimals for display purposes
+        symbol = _tokenSymbol;
         master = msg.sender;
                              // Set the symbol for display purposes
     }
