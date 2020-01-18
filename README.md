@@ -17,8 +17,8 @@
 ##### 박고은
 
 - 학번 : 20153174
-- github : https://github.com/alfzltm101
-- email : alfzltm101@naver.com
+- github : https://github.com/
+- email :
 
 ##### 김형민
 
