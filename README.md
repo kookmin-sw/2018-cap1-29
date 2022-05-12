@@ -11,26 +11,18 @@
 ##### 박상열(팀장)
 
 - 학번 : 20123363
-- github : https://github.com/phenol94
-- email : jimmy@grepp.co
 
 ##### 박고은
 
 - 학번 : 20153174
-- github : https://github.com/
-- email :
 
 ##### 김형민
 
 - 학번 : 20123351
-- github : https://github.com/toms0124
-- email : toms0124@naver.com
 
 ##### 김명수
 
 - 학번 : 20133200
-- github : https://github.com/learnitdeep, https://github.com/zerobugplz
-- email : learnitdeep@gmail.com
 
 ## III. Abstract (영문 요약)
 
